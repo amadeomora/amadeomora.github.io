@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 101%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 1em;
+    text-align: justify;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+}
+
+abbr, acronym {
+    cursor: help;
+    border-bottom: 1px dotted;
+}
+
+h1 {
+    display: inline;
+}
+
+img {
+    border: 0;
+}
+
+legend, h2 {
+    border: 1px solid;
+    margin: 0 0 1em 0;
+    text-align: center;
+    vertical-align: top;    
+}
+
+h3 {
+    margin: 0 0 1em 0;
+    color: #ffa500;
+}
+
+legend {
+    letter-spacing: 0.2em;
+    padding: 0.5em;
+}
+
+
+#head {
+    border: 0;
+    float: left;
+    margin: 0 10px 5px 0;
+    padding: 5px 0 0 0;
+    text-align: center;
+    width: 165px;
+}
+
+#head a {
+    text-decoration: none;
+}
+
+#head a:hover {
+}
+
+.show { display: block; }
+.hide { display: none; }
+.nofloat { clear: both; height: 2em; }
+
+/* Cabecera */
+#dp {
+    text-align: left;
+}
+
+#dp #www {
+    font-size: 80%; 
+}
+
+/* Apartados */
+#mnu, #fa, #el, #cpi, #pr, #pep, #cr {
+}
+
+/* Menú de opciones */
+#mnu {
+    margin: 1em 0 0 200px;
+}
+
+#mnu a {
+    text-decoration: none;
+}
+
+#mnu ul, #mnu li {
+}
+
+/* Formacion académica */
+#fa .titulo {
+    font-size: 125%;
+    margin-left: 2em;
+}
+
+#fa .titulo:first-letter {
+    font-size: 175%;
+}
+
+#fa .desc {
+    margin-left: 5em;
+}
+
+/*  Experiencia Laboral */
+#el .puesto {
+    border-top: 1px dotted;
+    padding: 0.2em 0 1em 0;
+}
+
+#el .puesto .fecha {
+    color: #aaa;
+    float: right;
+    font-size: 80%;
+    font-style: italic;
+    margin: 0 0 1em 1em;
+    text-align: right;
+}
+
+#el .puesto .materias, #el .puesto .desc {
+    font-size: 80%;
+    margin: 0 4em 0 8em;
+}
+
+#el .puesto .cargo {
+    font-weight: normal;
+    margin: 0 0 0 2em;
+}
+
+#el .puesto .empresa {
+    font-weight: bold;
+    margin: 0.25em 0 0.5em 0;
+}
+
+#el .puesto .nota {
+    font-size: 80%;
+}
+
+/* Cursos y ponencias impartidas */
+#cpi .ponencia {
+    border-top: 1px dotted;
+    font-size: 90%;
+    padding: 0.5em 0 0.5em 2em;
+}
+
+#cpi .ponencia div.titulo {
+    font-size: 120%;
+}
+
+#cpi .ponencia div.titulo:first-letter {
+    font-size: 150%;
+}
+
+/* Publicaciones realizadas */
+#pr .libro {
+    clear: both;
+}
+
+#pr .libro .portada {
+    margin-bottom: 1em;
+    float: left;
+}
+
+#pr .libro .ficha {
+    margin-left: 150px;
+}
+
+#pr .libro .ficha .titulo {
+    font-size: 120%;
+}
+
+#pr .libro .ficha .titulo:first-letter {
+    font-size: 150%;
+}
+
+#pr .libro .ficha .editorial {
+}
+
+#pr .libro .ficha .isbn {
+    font-size: 75%;
+}
+
+#pr .libro .ficha .autoria {
+    font-size: 75%;
+}
+
+/* Participación en proyectos */
+#pep .proyecto {
+    margin: 0.75em 0 0.5em 0;
+}
+
+#pep .proyecto div.empresa {
+    font-size: 125%;
+    margin-bottom: 0.5em;
+}
+
+#pep .proyecto span.empresa {
+}
+
+#pep .proyecto div.desc {
+    margin: 0 0 0.5em 4em;
+    padding: 0 0 0 1em;
+    border-left: 1px dotted;
+}
+#pep .proyecto div.herramientas {
+    font-size: 80%;
+    margin: 0 4em 0 4em;
+}
+
+/* Cursos recibidos */
+#cr li {
+    list-style-type: none;
+    line-height: 2em;
+}
+
+#cr .imparte {
+    border: 1px dotted;
+    border-top: 0;
+    font-size: 75%;
+    padding: 0 0.5em 0 0.5em;
+    margin-left: 0.5em;
+}
+
+#cr .imparte:before {
+    content: "en ";
+}
+
+/* Copyright */
+#copyright {
+    border-top: 1px dotted;
+    clear: both;
+    display: block;
+    font-size: 65%;
+    margin: 1.2em 0 1.2em 0;
+    text-align: center;
+}
+
+#copyright a {
+    float: left; 
+    margin-right: 2em;
+}
