@@ -219,7 +219,7 @@ let _puestos = [
     {
         "empresa": "Documenta Organización",
         "fecha": "De noviembre de 1989 a marzo de 1990",
-        "cargo": "Profesor de tecnología informática",
+        "cargo": "Analista",
         "modulos": "",
         "descripcion": "Documentación y archivos. BRS/Search."
     },
