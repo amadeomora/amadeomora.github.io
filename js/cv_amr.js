@@ -43,7 +43,7 @@ function menu() {
     let menu_nav = document.querySelector("nav")
     let tpl = (id, titulo) => `
         <div>
-            <a href="#${id}" onclick="sh('${id}')">${titulo}</a>
+            <a href="#" onclick="sh('${id}')">${titulo}</a>
         </div>
     `
     _menu.forEach(it => {

@@ -51,7 +51,23 @@ h2 {
 }
 
 nav {
-    margin: 1rem 0 0 200px;
+    margin: 1rem 1rem 0 1rem;
+}
+
+@media (min-width: 450px) {
+    nav div {
+        display: inline;
+    }
+
+    nav div ::after {
+        content: " | ";
+    }
+}
+
+@media (max-width: 450px) {
+    #idPersonal {
+        clear: both;
+    }
 }
 
 #idTitulos .titulo {
