@@ -863,7 +863,7 @@ function puestos() {
         if (typeof modulos != "string") {
             modulos = modulos.join(" | ")
         }
-        idPuestos.innerHTML += (tpl(it.empresa, it.fecha, it.cargo, modulos, it.descripcion ?? ""))
+        idPuestos.innerHTML += (tpl(it.empresa, it.fecha, it.cargo ?? "", modulos, it.descripcion ?? ""))
     })
 }
 
