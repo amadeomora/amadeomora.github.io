@@ -4,10 +4,9 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Tahoma, sans-serif;
     background-color: black;
     color: white;
-    margin: 0.5rem 0.1rem 0 0;
     text-align: left;
 }
 
@@ -33,15 +32,13 @@ img {
 h2 {
     background-color: white;
     color: black;
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 #idFoto {
-    border: 0;
     float: left;
-    margin: 0 10px 5px 0;
-    padding: 5px 0 0 0;
+    margin: 5px 10px 15px 0;
     text-align: center;
     width: 165px;
 }
@@ -72,7 +69,6 @@ nav {
 
 #idTitulos .titulo {
     font-size: 125%;
-    margin-left: 2em;
 }
 
 #idTitulos .titulo:first-letter {
@@ -80,32 +76,30 @@ nav {
 }
 
 #idTitulos .universidad {
-    margin-left: 5em;
+    margin-left: 4rem;
 }
 
 #idPuestos .puesto {
     border-top: 1px dotted #777;
-    padding: 0.2rem 0 1rem 0;
+    padding: 0.25rem 0 1rem;
 }
 
 #idPuestos .puesto .empresa {
     float: left;
-    font-weight: bold;
-    margin: 0.25rem 0 0.5rem 0;
+    font-size: 125%;
 }
 
 #idPuestos .puesto .fecha {
-    color: #777;
+    color: #ccc;
     float: right;
     font-size: 80%;
     font-style: italic;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0.5rem 1rem 1rem;
 }
 
 #idPuestos .puesto .cargo {
     clear: both;
-    font-weight: normal;
-    margin: 0 0 0 2rem;
+    margin-left: 2rem;
 }
 
 #idPuestos .puesto .modulos {
@@ -120,21 +114,21 @@ nav {
 }
 
 #idPonencias .ponencia {
-    border-top: 1px dotted;
-    font-size: 90%;
-    padding: 0.5em 0 0.5em 2em;
+    border-top: 1px dotted #777;
+    padding: 0.25rem 0 1rem;
 }
 
 #idPonencias .ponencia .titulo {
-    font-size: 120%;
+    font-size: 125%;
 }
 
 #idPonencias .ponencia .titulo:first-letter {
-    font-size: 150%;
+    font-size: 175%;
 }
 
 #idPonencias .ponencia .lugar {
-    margin: 0 0 0 2rem;
+    font-size: 80%;
+    margin-left: 2rem;
 }
 
 #idLibros .libro {
@@ -146,58 +140,48 @@ nav {
     float: left;
 }
 
-#idLibros .libro .ficha {
-    margin-left: 150px;
+#idLibros .libro .titulo {
+    font-size: 125%;
 }
 
-#idLibros .libro .ficha .titulo {
-    font-size: 120%;
+#idLibros .libro .titulo:first-letter {
+    font-size: 175%;
 }
 
-#idLibros .libro .ficha .titulo:first-letter {
-    font-size: 150%;
-}
-
-#idLibros .libro .ficha .isbn {
-    font-size: 75%;
-}
-
-#idLibros .libro .ficha .autoria {
-    font-size: 75%;
+#idLibros .libro .autoria {
+    font-size: 80%;
 }
 
 #idProyectos .proyecto {
-    border-top: 1px dotted;
-    margin: 0.75rem 0 0.5rem 0;
+    border-top: 1px dotted #777;
+    padding: 0.25rem 0 1rem;
 }
 
 #idProyectos .proyecto .empresa {
     font-size: 125%;
-    margin: 1rem 0 0.5rem 0.5rem;
 }
 
 #idProyectos .proyecto .desc {
-    margin-left: 2rem;
+    margin: 0.5rem 4rem 0 4rem;
 }
 
 #idProyectos .proyecto .herramientas {
     font-size: 80%;
-    margin: 0.5rem 0 0 4rem;
+    margin: 0.5rem 4rem 0 8rem;
 }
 
 #idCursos .ponencia {
-    border-top: 1px dotted;
-    margin-bottom: 1rem;
+    border-top: 1px dotted #777;
+    padding: 0.25rem 0 1rem;
 }
 
 #idCursos .curso {
-    margin-top: 1rem;
+    font-size: 125%;
 }
 
 #idCursos .lugar {
-    font-size: 75%;
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    margin-left: 0.5rem;
+    font-size: 80%;
+    margin: 0.5rem 4rem 0 4rem;
 }
 
 #idCursos .lugar:before {
@@ -217,6 +201,7 @@ footer {
 
 footer a {
     float: right;
+    margin-right: 0.25rem;
 }
 
 .show {
@@ -229,5 +214,5 @@ footer a {
 
 .nofloat {
     clear: both;
-    height: 3rem;
+    height: 1.25rem;
 }

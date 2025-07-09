@@ -259,7 +259,7 @@ let cv = {
 		},
 		{
 			"empresa":"Centro de Tratamiento de la Documentación",
-			"fecha":"De Enero de 1989 a octubre de 1989",
+			"fecha":"De enero de 1989 a octubre de 1989",
 			"cargo":"Técnico de Sistemas",
 			"descripcion":"VAX/VMS y PDP/RSX"
 		},
