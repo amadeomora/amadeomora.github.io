@@ -8,6 +8,9 @@ body {
     background-color: black;
     color: white;
     text-align: left;
+
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 a {
@@ -25,12 +28,6 @@ acronym {
     border-bottom: 1px dotted;
 }
 
-h2 {
-    background-color: white;
-    color: black;
-    margin-bottom: 1rem;
-}
-
 img {
     border: 0;
 }
@@ -46,24 +43,57 @@ img {
     font-size: 80%;
 }
 
-nav {
-    margin: 1rem 1rem 0 1rem;
-}
-
-@media (min-width: 450px) {
-    nav div {
-        display: inline;
-    }
-
-    nav div ::after {
-        content: " | ";
-    }
-}
-
 @media (max-width: 450px) {
     #idPersonal {
         clear: both;
+        margin-bottom: 1rem;
     }
+}
+
+nav {
+    background-color: black;
+    clear: both;
+    position: sticky;
+    top: 0;
+    padding: 0rem 0.5rem 0 0.5rem;
+}
+
+nav a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    margin: 0 1rem 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+nav a:hover {
+    background-color: orange;
+    color: white;
+}
+
+h2 {
+    background-color: white;
+    color: black;
+    margin-bottom: 1rem;
+    padding: 0.1rem 1rem 0.1rem 0;
+    text-align: right;
+    border-radius: 1rem 1rem 0 0;
+}
+
+section {
+    clear: both;
+    padding-top: 4rem;
+}
+
+@media (max-width: 800px) {
+    section {
+        padding-top: 5.5rem;
+    }
+}
+
+main {
+    padding-bottom: 1.5rem;
 }
 
 #idTitulos .titulo {
@@ -79,7 +109,7 @@ nav {
 }
 
 #idPuestos .puesto {
-    border-top: 1px dotted #777;
+    border-top: 1px dotted orange;
     padding: 0.25rem 0 1rem;
 }
 
@@ -89,7 +119,7 @@ nav {
 }
 
 #idPuestos .puesto .fecha {
-    color: #ccc;
+    color: orange;
     float: right;
     font-size: 80%;
     font-style: italic;
@@ -195,23 +225,8 @@ footer {
     font-size: 80%;
     height: 1.5rem;
     padding-top: 0.2rem;
+    text-align: right;
+    margin: 0 auto;
+    max-width: 1000px;
     width: 100%;
-}
-
-footer a {
-    float: right;
-    margin-right: 0.25rem;
-}
-
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
-
-.nofloat {
-    clear: both;
-    height: 1.25rem;
 }

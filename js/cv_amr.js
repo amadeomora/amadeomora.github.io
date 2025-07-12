@@ -1,7 +1,3 @@
-show = div => document.getElementById(div).className = 'show'
-hide = div => document.getElementById(div).className = 'hide'
-sh = div => { secciones.forEach(it => hide(it.id)); show(div) }
-
 load = () => {
     menu()
     titulos()
@@ -15,37 +11,41 @@ load = () => {
 let secciones = [
 	{
 		"id":"idTitulos",
+		"link": "Formación",
 		"titulo":"Formación académica"
 	},
 	{
 		"id":"idPuestos",
+		"link": "Experiencia",
 		"titulo":"Experiencia laboral"
 	},
 	{
 		"id":"idPonencias",
+		"link": "Ponencias",
 		"titulo":"Cursos y ponencias impartidas"
 	},
 	{
 		"id":"idLibros",
+		"link": "Publicaciones",
 		"titulo":"Publicaciones realizadas"
 	},
 	{
 		"id":"idProyectos",
+		"link": "Proyectos",
 		"titulo":"Participación en proyectos"
 	},
 	{
 		"id":"idCursos",
+		"link": "Cursos",
 		"titulo":"Cursos realizados"
 	}
 ]
 
 function menu() {
     let menu_nav = document.querySelector("nav")
-    let tpl = (id, titulo) => `<div><a href="#" onclick="sh('${id}')">${titulo}</a></div>`
     secciones.forEach(it => {
-        menu_nav.innerHTML += tpl(it.id, it.titulo)
+        menu_nav.innerHTML += `<a href="#${it.id}">${it.link}</a>` //tpl(it.id, it.link)
         document.getElementById(it.id).innerHTML = `<h2>${it.titulo}</h2>`
-        document.getElementById(it.id).className = 'hide'
     })
 }
 
