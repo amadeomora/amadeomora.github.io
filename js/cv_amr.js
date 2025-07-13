@@ -508,21 +508,25 @@ let cv = {
 	],
 	"libros":[
 		{
+			"img":"img/max12.png",
 			"titulo":"Manual de Instalación de MAX 12.0",
 			"editorial":"Comunidad de Madrid.",
 			"autoria":"[Coautoría]"
 		},
 		{
+			"img":"img/max11.png",
 			"titulo":"Manual de Instalación de MAX 11.0",
 			"editorial":"Comunidad de Madrid.",
 			"autoria":"[Coautoría]"
 		},
 		{
+			"img":"img/max10.png",
 			"titulo":"Manual de Instalación de MAX 10.0",
 			"editorial":"Comunidad de Madrid.",
 			"autoria":"[Coautoría]"
 		},
 		{
+			"img":"img/max9.png",
 			"titulo":"Manual de Instalación de MAX 9.0",
 			"editorial":"Comunidad de Madrid.",
 			"autoria":"[Coautoría]"
@@ -546,37 +550,37 @@ let cv = {
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max50.png",
+			"img":"img/max5.png",
 			"titulo":"Manual de Instalación de MAX 5.0",
 			"editorial":"Comunidad de Madrid. 2009.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max50.png",
+			"img":"img/max5.png",
 			"titulo":"Guía de Referencia de MAX 5.0",
 			"editorial":"Comunidad de Madrid. 2009.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max40.png",
+			"img":"img/max4.png",
 			"titulo":"Manual de Instalación de MAX 4.0",
 			"editorial":"Comunidad de Madrid. 2008.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max40.png",
+			"img":"img/max4.png",
 			"titulo":"Guía de Referencia de MAX 4.0",
 			"editorial":"Comunidad de Madrid. 2008.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max30.png",
+			"img":"img/max3.png",
 			"titulo":"Guía de Instalación de MAX 3.0",
 			"editorial":"Comunidad de Madrid. 2007.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max30.png",
+			"img":"img/max3.png",
 			"titulo":"Guía de Utilización de MAX 3.0",
 			"editorial":"Comunidad de Madrid. 2007.",
 			"autoria":"[Coautoría]"
@@ -588,13 +592,13 @@ let cv = {
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max.png",
+			"img":"img/max2.png",
 			"titulo":"MAX, Madrid Linux, v.2.0. Manual de instalación",
 			"editorial":"Comunidad de Madrid. 2006.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max.png",
+			"img":"img/max2.png",
 			"titulo":"MAX, Madrid Linux, v.2.0. Manual de utilización por el usuario",
 			"editorial":"Comunidad de Madrid. 2006.",
 			"autoria":"[Coautoría]"
