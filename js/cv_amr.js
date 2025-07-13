@@ -53,19 +53,23 @@ let cv = {
 	"titulos":[
 		{
 			"titulo":"Licenciado en Informática",
-			"universidad":"Universidad Politécnica de Madrid"
+			"universidad":"Universidad Politécnica de Madrid",
+			"logo":"img/upm.png"
 		},
 		{
 			"titulo":"Diploma de Estudios Avanzados en Didáctica y Organización Escolar",
-			"universidad":"Universidad Nacional de Educación a Distancia"
+			"universidad":"Universidad Nacional de Educación a Distancia",
+			"logo":"img/uned.png"
 		},
 		{
 			"titulo":"Máster Universitario en Software Libre",
-			"universidad":"Universitat Oberta de Catalunya"
+			"universidad":"Universitat Oberta de Catalunya",
+			"logo":"img/uoc.png"
 		},
 		{
 			"titulo":"First Certificate in English",
-			"universidad":"University of Cambridge"
+			"universidad":"University of Cambridge",
+			"logo":"img/cambridge.png"
 		}
 	],
 	"puestos":[
@@ -844,13 +848,14 @@ let cv = {
 
 
 function titulos() {
-    let tpl = (t, u) => `
+    let tpl = (i, t, u) => `
         <div class="titulacion">
+			<div class="logo"><img src="${i}"></div>
             <div class="titulo">${t}</div>
             <div class="universidad">${u}</div>
         </div>
     `
-    cv.titulos.forEach(it => idTitulos.innerHTML += tpl(it.titulo, it.universidad))
+    cv.titulos.forEach(it => idTitulos.innerHTML += tpl(it.logo, it.titulo, it.universidad))
 }
 
 function puestos() {
