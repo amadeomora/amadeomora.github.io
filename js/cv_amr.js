@@ -42,9 +42,9 @@ let secciones = [
 ]
 
 function menu() {
-    let menu_nav = document.querySelector("nav")
+    let menuNav = document.querySelector("nav")
     secciones.forEach(it => {
-        menu_nav.innerHTML += `<a href="#${it.id}">${it.link}</a>` //tpl(it.id, it.link)
+        menuNav.innerHTML += `<a href="#${it.id}">${it.link}</a>`
         document.getElementById(it.id).innerHTML = `<h2>${it.titulo}</h2>`
     })
 }
@@ -54,22 +54,22 @@ let cv = {
 		{
 			"titulo":"Licenciado en Informática",
 			"universidad":"Universidad Politécnica de Madrid",
-			"logo":"img/upm.png"
+			"logo":"upm.png"
 		},
 		{
 			"titulo":"Diploma de Estudios Avanzados en Didáctica y Organización Escolar",
 			"universidad":"Universidad Nacional de Educación a Distancia",
-			"logo":"img/uned.png"
+			"logo":"uned.png"
 		},
 		{
 			"titulo":"Máster Universitario en Software Libre",
 			"universidad":"Universitat Oberta de Catalunya",
-			"logo":"img/uoc.png"
+			"logo":"uoc.png"
 		},
 		{
 			"titulo":"First Certificate in English",
 			"universidad":"University of Cambridge",
-			"logo":"img/cambridge.png"
+			"logo":"cambridge.png"
 		}
 	],
 	"puestos":[
@@ -135,7 +135,7 @@ let cv = {
 				"Lenguajes de marcas",
 				"Programación",
 				"Programación multimedia y dispositivos móviles",
-				"Desarrollo de Funciones en el Sistema Informático"
+				"Desarrollo de funciones en el sistema informático"
 			],
 			"descripcion":"Coordinador de FP Dual y Tutor de alumnos del Máster de Profesores de Enseñanza Secundaria"
 		},
@@ -144,8 +144,8 @@ let cv = {
 			"fecha":"Cursos 2008-09 y 2009-10",
 			"cargo":"Profesor de informática",
 			"modulos":[
-				"Programación en Lenguajes Estructurados",
-				"Desarrollo de Funciones en el Sistema Informático"
+				"Programación en lenguajes estructurados",
+				"Desarrollo de funciones en el sistema informático"
 			],
 			"descripcion":"Tutor de alumnos del Máster de Profesores de Enseñanza Secundaria"
 		},
@@ -162,15 +162,15 @@ let cv = {
 		{
 			"empresa":"Ministerio de Educación",
 			"fecha":"Curso 2007-08",
-			"cargo":"Jefe de Área de Formación del Profesorado del Instituto Superior de Formación y Recursos en Red para el Profesorado"
+			"cargo":"Jefe de Área de Formación del Profesorado del Instituto Superior de Formación y Recursos en Red para el Profesorado (ISFTIC)"
 		},
 		{
 			"empresa":"IES Clara del Rey",
 			"fecha":"Cursos 2005-06 y 2006-07",
 			"cargo":"Profesor de informática y coordinador TIC",
 			"modulos":[
-				"Programación en Lenguajes Estructurados",
-				"Desarrollo de Funciones en el Sistema Informático",
+				"Programación en lenguajes estructurados",
+				"Desarrollo de funciones en el sistema informático",
 				"Fundamentos de programación",
 				"Sistemas gestores de bases de datos"
 			],
@@ -180,7 +180,7 @@ let cv = {
 			"empresa":"IES La Arboleda de Alcorcón (Madrid)",
 			"fecha":"Cursos 2003-04 y 2004-05",
 			"cargo":"Profesor de informática",
-			"modulos":"Desarrollo de Funciones en el Sistema Informático"
+			"modulos":"Desarrollo de funciones en el sistema informático"
 		},
 		{
 			"empresa":"Ministerio de Educación, Cultura y Deporte",
@@ -190,7 +190,7 @@ let cv = {
 		{
 			"empresa":"Ministerio de Educación, Cultura y Deporte",
 			"fecha":"Curso 2001-02",
-			"cargo":"Consejero Técnico del Centro Nacional de Informática y Comunicación Educativa",
+			"cargo":"Consejero Técnico del Centro Nacional de Informática y Comunicación Educativa (CNICE)",
 			"descripcion":[
 				"Plataformas de formación a distancia",
 				"Proyecto Mentor",
@@ -198,12 +198,12 @@ let cv = {
 			]
 		},
 		{
-			"empresa":"IES La Arboleda de Alcorcón (Madrid)",
+			"empresa":"IES La Arboleda de Alcorcón - Madrid",
 			"fecha":"Curso 2000-01",
 			"cargo":"Profesor de informática y jefe del departamento de informática y comunicaciones",
 			"modulos":[
-				"Sistemas Gestores de Bases de Datos",
-				"Desarrollo de Funciones en el Sistema Informático"
+				"Sistemas gestores de bases de datos",
+				"Desarrollo de funciones en el sistema informático"
 			]
 		},
 		{
@@ -211,28 +211,28 @@ let cv = {
 			"fecha":"Curso 1999-2000",
 			"cargo":"Profesor de informática",
 			"modulos":[
-				"Sistemas Gestores de Bases de Datos",
-				"Desarrollo de Funciones en el Sistema Informático"
+				"Sistemas gestores de bases de datos",
+				"Desarrollo de funciones en el sistema informático"
 			]
 		},
 		{
 			"empresa":"Ministerio de Educación y Ciencia",
 			"fecha":"De febrero de 1998 a septiembre de 1999",
-			"cargo":"Jefe del Gabinete de Telemática del Programa de Nuevas Tecnologías de la Información y la Comunicación"
+			"cargo":"Jefe del Gabinete de Telemática del Programa de Nuevas Tecnologías de la Información y la Comunicación (PNTIC)"
 		},
 		{
-			"empresa":"IES La Arboleda de Alcorcón (Madrid)",
+			"empresa":"IES La Arboleda de Alcorcón - Madrid",
 			"fecha":"De septiembre de 1996 a enero 1998",
 			"cargo":"Profesor de informática",
 			"modulos":[
 				"Lenguajes de 4ª generación y herramientas CASE",
-				"Formación en Centros de Trabajo"
+				"Formación en centros de trabajo"
 			]
 		},
 		{
 			"empresa":"Ministerio de Educación y Ciencia",
 			"fecha":"De enero de 1995 a septiembre de 1996",
-			"cargo":"Asesor Técnico Docente del Centro de Desarrollo Curricular"
+			"cargo":"Asesor Técnico Docente del Centro de Desarrollo Curricular (CDC)"
 		},
 		{
 			"empresa":"IFP Villablanca",
@@ -294,7 +294,7 @@ let cv = {
 			"descripcion":"Software libre, motor de empresas"
 		},
 		{
-			"empresa":"Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación y Ciencia",
+			"empresa":"Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación y Ciencia (CNICE)",
 			"descripcion":"Análisis y desarrollo de la plataforma virtual de formación y trabajo cooperativo a distancia del profesorado",
 			"herramientas":"PHP, MySQL, PostgreSQL y Apache en Linux"
 		},
@@ -303,24 +303,24 @@ let cv = {
 			"descripcion":"Grupo de Gestión de Calidad"
 		},
 		{
-			"empresa":"Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación y Ciencia",
+			"empresa":"Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación y Ciencia (CNICE)",
 			"descripcion":"Coordinador a distancia del curso de Aplicaciones didácticas con Neobook"
 		},
 		{
-			"empresa":"IES La Arboleda - CAP de Alcorcón",
+			"empresa":"IES La Arboleda - CAP de Alcorcón - Madrid",
 			"descripcion":"Coordinador del grupo de trabajo de la elaboración del Portal WEB del IES La Arboleda"
 		},
 		{
-			"empresa":"Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación, Cultura y Deporte",
+			"empresa":"Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación, Cultura y Deporte (CNICE)",
 			"descripcion":"Tutor a distancia del curso de Programación en PHP en la Enseñanza"
 		},
 		{
-			"empresa":"Subdirección General de Tratamiento de la Información del Ministerio de Educación, Cultura y Deporte",
+			"empresa":"Subdirección General de Tratamiento de la Información del Ministerio de Educación, Cultura y Deporte (SGTI)",
 			"descripcion":"Portal web del Ministerio de Educación, Cultura y Deporte",
 			"herramientas":"J2EE y Oracle"
 		},
 		{
-			"empresa":"Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación, Cultura y Deporte",
+			"empresa":"Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación, Cultura y Deporte (CNICE)",
 			"descripcion":"Miembro del consejo de redacción de la revista Red Digital"
 		},
 		{
@@ -328,12 +328,12 @@ let cv = {
 			"descripcion":"Grupo de Trabajo Virtual, formado por especialistas en informática educativa, que investigan las posibilidades didácticas de las herramientas de tiempo real en Internet aplicadas a la enseñanza no universitaria"
 		},
 		{
-			"empresa":"Centro de Desarrollo Curricular del Ministerio de Educación y Ciencia",
+			"empresa":"Centro de Desarrollo Curricular del Ministerio de Educación y Ciencia (CDC)",
 			"descripcion":"Participación en el análisis y programación del software de gestión administrativa-académica de centros docentes GICeDo",
 			"herramientas":"Clipper en MS-DOS"
 		},
 		{
-			"empresa":"Centro de Desarrollo Curricular del Ministerio de Educación y Ciencia",
+			"empresa":"Centro de Desarrollo Curricular del Ministerio de Educación y Ciencia (CDC)",
 			"descripcion":"Base de Datos de Desarrollo Curricular",
 			"herramientas":"BRS, ABSYS, Clipper en UNIX SCO/DOS/Windows"
 		},
@@ -342,17 +342,14 @@ let cv = {
 			"descripcion":[
 				"Diseño del Sistema de Gestión Documental Automatizado de la compañía ENDESA",
 				"Mecanización del Archivo fotográfico de la Revista DIEZ MINUTOS del Grupo Hachette",
-				"Mecanización del catálogo de la biblioteca del Ministerio de Cultura"
-			],
-			"herramientas":"C, MNS y BRS/Search en UNIX SCO"
-		},
-		{
-			"empresa":"Documenta Organización",
-			"descripcion":[
+				"Mecanización del catálogo de la biblioteca del Ministerio de Cultura",
 				"Proyecto docuNAUTA. Software de gestión documental de archivos",
 				"Diseño del registro de entrada/salida y flujo documental de la entidad SEOPAN"
 			],
-			"herramientas":"C, Clipper en MS-DOS"
+			"herramientas":[
+				"C, MNS y BRS/Search en UNIX SCO",
+				"C, Clipper en MS-DOS"
+			]
 		},
 		{
 			"empresa":"Centro de Tratamiento de la Documentación",
@@ -512,127 +509,127 @@ let cv = {
 	],
 	"libros":[
 		{
-			"img":"img/max12.png",
+			"img":"max12.png",
 			"titulo":"Manual de Instalación de MAX 12.0",
 			"editorial":"Comunidad de Madrid.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max11.png",
+			"img":"max11.png",
 			"titulo":"Manual de Instalación de MAX 11.0",
 			"editorial":"Comunidad de Madrid.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max10.png",
+			"img":"max10.png",
 			"titulo":"Manual de Instalación de MAX 10.0",
 			"editorial":"Comunidad de Madrid.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max9.png",
+			"img":"max9.png",
 			"titulo":"Manual de Instalación de MAX 9.0",
 			"editorial":"Comunidad de Madrid.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max8.png",
+			"img":"max8.png",
 			"titulo":"Manual de Instalación de MAX 8.0",
 			"editorial":"Comunidad de Madrid. 2015.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max7.jpg",
+			"img":"max7.jpg",
 			"titulo":"Manual de Instalación de MAX 7.0",
 			"editorial":"Comunidad de Madrid. 2012.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max6.jpg",
+			"img":"max6.jpg",
 			"titulo":"Manual de Instalación de MAX 6.0",
 			"editorial":"Comunidad de Madrid. 2010.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max5.png",
+			"img":"max5.png",
 			"titulo":"Manual de Instalación de MAX 5.0",
 			"editorial":"Comunidad de Madrid. 2009.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max5.png",
+			"img":"max5.png",
 			"titulo":"Guía de Referencia de MAX 5.0",
 			"editorial":"Comunidad de Madrid. 2009.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max4.png",
+			"img":"max4.png",
 			"titulo":"Manual de Instalación de MAX 4.0",
 			"editorial":"Comunidad de Madrid. 2008.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max4.png",
+			"img":"max4.png",
 			"titulo":"Guía de Referencia de MAX 4.0",
 			"editorial":"Comunidad de Madrid. 2008.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max3.png",
+			"img":"max3.png",
 			"titulo":"Guía de Instalación de MAX 3.0",
 			"editorial":"Comunidad de Madrid. 2007.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max3.png",
+			"img":"max3.png",
 			"titulo":"Guía de Utilización de MAX 3.0",
 			"editorial":"Comunidad de Madrid. 2007.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/tutoreinternet.jpg",
+			"img":"tutoreinternet.jpg",
 			"titulo":"Tutor e Internet",
 			"editorial":"CNICE-MEC. 2006.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max2.png",
+			"img":"max2.png",
 			"titulo":"MAX, Madrid Linux, v.2.0. Manual de instalación",
 			"editorial":"Comunidad de Madrid. 2006.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/max2.png",
+			"img":"max2.png",
 			"titulo":"MAX, Madrid Linux, v.2.0. Manual de utilización por el usuario",
 			"editorial":"Comunidad de Madrid. 2006.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/tutoreseinternet.png",
+			"img":"tutoreseinternet.png",
 			"titulo":"Tutores e internet",
 			"editorial":"CNICE-MECD. 2003.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/hotpotatoes.png",
+			"img":"hotpotatoes.png",
 			"titulo":"Aplicaciones Educativas con HOT POTATOES",
 			"editorial":"CNICE-MECD. 2002.",
 			"autoria":"[Asesoría técnica]"
 		},
 		{
-			"img":"img/videodigitalymultimedia.png",
+			"img":"videodigitalymultimedia.png",
 			"titulo":"Vídeo Digital y Multimedia",
 			"editorial":"PNTIC-MEC. 1998.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/clipper.png",
+			"img":"clipper.png",
 			"titulo":"Guía Práctica de Clipper 5.2.",
 			"editorial":"Anaya Multimedia. 1994.",
 			"autoria":"[Coautoría]"
 		},
 		{
-			"img":"img/pooclipper.png",
+			"img":"pooclipper.png",
 			"titulo":"Programación Orientada al Objeto en Clipper.",
 			"editorial":"Anaya Multimedia. 1993.",
 			"autoria":"[Autoría]"
@@ -850,7 +847,7 @@ let cv = {
 function titulos() {
     let tpl = (i, t, u) => `
         <div class="titulacion">
-			<div class="logo"><img src="${i}"></div>
+			<div class="logo"><img src="img/universidad/${i}" alt="Logo de la Universidad"></div>
             <div class="titulo">${t}</div>
             <div class="universidad">${u}</div>
         </div>
@@ -889,7 +886,11 @@ function proyectos() {
         if (typeof desc != "string") {
             desc = desc.join(" | ")
         }
-        idProyectos.innerHTML += (tpl(it.empresa, desc, it.herramientas ?? ""))
+		let herramientas = it.herramientas ?? ""
+		if (typeof herramientas != "string") {
+			herramientas = herramientas.join(" | ")
+		}
+        idProyectos.innerHTML += (tpl(it.empresa, desc, herramientas))
     })
 }
 
@@ -906,13 +907,13 @@ function ponencias() {
 function libros() {
     let tpl = (i, t, e, a) => `
         <div class="libro">
-            <div class="portada"><img src="${i}"></div>
+            <div class="portada"><img src="img/libros/${i}" alt="Portada del libro"></div>
             <div class="titulo">${t}</div>
             <div class="editorial">${e}</div>
             <div class="autoria">${a}</div>
         </div>
     `
-    cv.libros.forEach(it => idLibros.innerHTML += (tpl(it.img ?? "img/max.png", it.titulo, it.editorial, it.autoria)))
+    cv.libros.forEach(it => idLibros.innerHTML += (tpl(it.img ?? "max2.png", it.titulo, it.editorial, it.autoria)))
 }
 
 function cursos() {
