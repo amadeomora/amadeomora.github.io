@@ -8,7 +8,7 @@ load = () => {
     cursos()
 }
 
-let secciones = [
+const secciones = [
 	{
 		"id":"idTitulos",
 		"link": "Formación",
@@ -49,7 +49,7 @@ function menu() {
     })
 }
 
-let cv = {
+const cv = {
 	"titulos":[
 		{
 			"titulo":"Licenciado en Informática",
@@ -137,7 +137,10 @@ let cv = {
 				"Programación multimedia y dispositivos móviles",
 				"Desarrollo de funciones en el sistema informático"
 			],
-			"descripcion":"Coordinador de FP Dual y Tutor de alumnos del Máster de Profesores de Enseñanza Secundaria"
+			"descripcion":[
+				"Coordinador de FP Dual",
+				"Tutor de alumnos del Máster de Profesores de Enseñanza Secundaria"
+			]
 		},
 		{
 			"empresa":"IES Clara del Rey",
@@ -843,9 +846,8 @@ let cv = {
 	]
 }
 
-
 function titulos() {
-    let tpl = (i, t, u) => `
+    const tpl = (i, t, u) => `
         <div class="titulacion">
 			<div class="logo"><img src="img/universidad/${i}" alt="Logo de la Universidad"></div>
             <div class="titulo">${t}</div>
@@ -856,56 +858,41 @@ function titulos() {
 }
 
 function puestos() {
-    let tpl = (e, f, c, m, d) => `
+    const tpl = (e, f, c, m, d) => `
         <div class="puesto">
             <div class="empresa">${e}</div>
             <div class="fecha">${f}</div>
             <div class="cargo">${c}</div>
             <div class="modulos">${m}</div>
             <div class="descripcion">${d}</div>
-        </div>`
-    cv.puestos.forEach(it => {
-        let modulos = it.modulos ?? ""
-        if (typeof modulos != "string") {
-            modulos = modulos.join(" | ")
-        }
-        idPuestos.innerHTML += (tpl(it.empresa, it.fecha, it.cargo ?? "", modulos, it.descripcion ?? ""))
-    })
+        </div>
+	`
+    cv.puestos.forEach(it => idPuestos.innerHTML += tpl(it.empresa, it.fecha, fmt(it.cargo), fmt(it.modulos), fmt(it.descripcion)))
 }
 
 function proyectos() {
-    let tpl = (e, d, h) => `
+    const tpl = (e, d, h) => `
         <div class="proyecto">
             <div class="empresa">${e}</div>
             <div class="desc">${d}</div>
             <div class="herramientas">${h}</div>
         </div>
     `
-    cv.proyectos.forEach(it => {
-        let desc = it.descripcion ?? ""
-        if (typeof desc != "string") {
-            desc = desc.join(" | ")
-        }
-		let herramientas = it.herramientas ?? ""
-		if (typeof herramientas != "string") {
-			herramientas = herramientas.join(" | ")
-		}
-        idProyectos.innerHTML += (tpl(it.empresa, desc, herramientas))
-    })
+    cv.proyectos.forEach(it => idProyectos.innerHTML += tpl(it.empresa, fmt(it.descripcion), fmt(it.herramientas)))
 }
 
 function ponencias() {
-    let tpl = (t, l) => `
+    const tpl = (t, l) => `
         <div class="ponencia">
             <div class="titulo">${t}</div>
             <div class="lugar">${l}</div>
         </div>
     `
-    cv.ponencias.forEach(it => idPonencias.innerHTML += (tpl(it.titulo, it.lugar)))
+    cv.ponencias.forEach(it => idPonencias.innerHTML += tpl(it.titulo, it.lugar))
 }
 
 function libros() {
-    let tpl = (i, t, e, a) => `
+    const tpl = (i, t, e, a) => `
         <div class="libro">
             <div class="portada"><img src="img/libros/${i}" alt="Portada del libro"></div>
             <div class="titulo">${t}</div>
@@ -913,15 +900,20 @@ function libros() {
             <div class="autoria">${a}</div>
         </div>
     `
-    cv.libros.forEach(it => idLibros.innerHTML += (tpl(it.img ?? "max2.png", it.titulo, it.editorial, it.autoria)))
+    cv.libros.forEach(it => idLibros.innerHTML += tpl(it.img, it.titulo, it.editorial, it.autoria))
 }
 
 function cursos() {
-    let tpl = (c, l) => `
+    const tpl = (c, l) => `
         <div class="ponencia">
             <div class="curso">${c}</div>
             <div class="lugar">${l}</div>
         </div>
     `
-    cv.cursos.forEach(it => idCursos.innerHTML += (tpl(it.curso, it.lugar)))
+    cv.cursos.forEach(it => idCursos.innerHTML += tpl(it.curso, it.lugar))
+}
+
+fmt = (it) => {
+	it = it ?? ""
+	return typeof it == "string" ? it : it.join(" | ")
 }
