@@ -38,8 +38,12 @@ img {
     width: 165px;
 }
 
-#idPersonal span {
+#idPersonal div {
     font-size: 80%;
+}
+
+#idPersonal div ~ div {
+    margin-top: 2rem;
 }
 
 @media (max-width: 550px) {

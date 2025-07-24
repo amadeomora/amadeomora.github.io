@@ -1,0 +1,32 @@
+[
+    {
+        "id": "idTitulos",
+        "link": "Formación",
+        "titulo": "Formación académica"
+    },
+    {
+        "id": "idPuestos",
+        "link": "Experiencia",
+        "titulo": "Experiencia laboral"
+    },
+    {
+        "id": "idPonencias",
+        "link": "Ponencias",
+        "titulo": "Cursos y ponencias impartidas"
+    },
+    {
+        "id": "idLibros",
+        "link": "Publicaciones",
+        "titulo": "Publicaciones realizadas"
+    },
+    {
+        "id": "idProyectos",
+        "link": "Proyectos",
+        "titulo": "Participación en proyectos"
+    },
+    {
+        "id": "idCursos",
+        "link": "Cursos",
+        "titulo": "Cursos realizados"
+    }
+]
