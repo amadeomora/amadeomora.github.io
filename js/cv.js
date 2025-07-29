@@ -3,97 +3,97 @@ load = () => {
 	cv()
 }
 
-function menu() {
+async function menu() {
 	const menuNav = document.querySelector("nav")
-	fetch('./data/menu.json')
-		.then(response => response.json())
-		.then(secciones => secciones.forEach(it => {
-			menuNav.innerHTML += `<a href="#${it.id}">${it.link}</a>`
-			document.getElementById(it.id).innerHTML = `<h2>${it.titulo}</h2>`
-		}))
+    const secciones = await fetchUrl('./data/menu.json')
+    secciones.forEach(it => {
+		menuNav.innerHTML += `<a href="#${it.id}">${it.link}</a>`
+		document.getElementById(it.id).innerHTML = `<h2>${it.titulo}</h2>`
+	})
 }
 
-function cv() {
-	fetch('./data/cv.json')
-		.then(response => response.json())
-		.then(cv => {
-			titulos(cv)
-			puestos(cv)
-			ponencias(cv)
-			libros(cv)
-			proyectos(cv)
-			cursos(cv)
-		})
+async function cv() {
+    const cv = await fetchUrl('./data/cv.json')
+    titulos(cv.titulos, 'idTitulos')
+    puestos(cv.puestos, 'idPuestos')
+    ponencias(cv.ponencias, 'idPonencias')
+    libros(cv.libros, 'idLibros')
+    proyectos(cv.proyectos, 'idProyectos')
+    cursos(cv.cursos, 'idCursos')
 }
 
-function titulos(cv) {
-	const tpl = (i, t, u) => `
+function titulos(info, section) {
+	info.forEach(it => document.getElementById(section).innerHTML += `
         <div class="titulacion">
-			<div class="logo"><img src="img/universidad/${i}" alt="Logo de la Universidad"></div>
-            <div class="titulo">${t}</div>
-            <div class="universidad">${u}</div>
+			<div class="logo"><img src="img/universidad/${it.logo}" alt="Logo de la Universidad"></div>
+            <div class="titulo">${it.titulo}</div>
+            <div class="universidad">${it.universidad}</div>
         </div>
-    `
-	cv.titulos.forEach(it => idTitulos.innerHTML += tpl(it.logo, it.titulo, it.universidad))
+    `)
 }
 
-function puestos(cv) {
-	const tpl = (e, f, c, m, d) => `
+function puestos(info, section) {
+	info.forEach(it => document.getElementById(section).innerHTML += `
         <div class="puesto">
-            <div class="empresa">${e}</div>
-            <div class="fecha">${f}</div>
-            <div class="cargo">${c}</div>
-            <div class="modulos">${m}</div>
-            <div class="descripcion">${d}</div>
+            <div class="empresa">${it.empresa}</div>
+            <div class="fecha">${it.fecha}</div>
+            <div class="cargo">${fmt(it.cargo)}</div>
+            <div class="modulos">${fmt(it.modulos)}</div>
+            <div class="descripcion">${fmt(it.descripcion)}</div>
         </div>
-	`
-	cv.puestos.forEach(it => idPuestos.innerHTML += tpl(it.empresa, it.fecha, fmt(it.cargo), fmt(it.modulos), fmt(it.descripcion)))
+	`)
 }
 
-function proyectos(cv) {
-	const tpl = (e, d, h) => `
+function proyectos(info, section) {
+	info.forEach(it => document.getElementById(section).innerHTML += `
         <div class="proyecto">
-            <div class="empresa">${e}</div>
-            <div class="desc">${d}</div>
-            <div class="herramientas">${h}</div>
+            <div class="empresa">${it.empresa}</div>
+            <div class="desc">${fmt(it.descripcion)}</div>
+            <div class="herramientas">${fmt(it.herramientas)}</div>
         </div>
-    `
-	cv.proyectos.forEach(it => idProyectos.innerHTML += tpl(it.empresa, fmt(it.descripcion), fmt(it.herramientas)))
+    `)
 }
 
-function ponencias(cv) {
-	const tpl = (t, l) => `
+function ponencias(info, section) {
+	info.forEach(it => document.getElementById(section).innerHTML += `
         <div class="ponencia">
-            <div class="titulo">${t}</div>
-            <div class="lugar">${l}</div>
+            <div class="titulo">${it.titulo}</div>
+            <div class="lugar">${it.lugar}</div>
         </div>
-    `
-	cv.ponencias.forEach(it => idPonencias.innerHTML += tpl(it.titulo, it.lugar))
+    `)
 }
 
-function libros(cv) {
-	const tpl = (i, t, e, a) => `
+function libros(info, section) {
+	info.forEach(it => document.getElementById(section).innerHTML += `
         <div class="libro">
-            <div class="portada"><img src="img/libros/${i}" alt="Portada del libro"></div>
-            <div class="titulo">${t}</div>
-            <div class="editorial">${e}</div>
-            <div class="autoria">${a}</div>
+            <div class="portada"><img src="img/libros/${it.img}" alt="Portada del libro"></div>
+            <div class="titulo">${it.titulo}</div>
+            <div class="editorial">${it.editorial}</div>
+            <div class="autoria">${it.autoria}</div>
         </div>
-    `
-	cv.libros.forEach(it => idLibros.innerHTML += tpl(it.img, it.titulo, it.editorial, it.autoria))
+    `)
 }
 
-function cursos(cv) {
-	const tpl = (c, l) => `
+function cursos(info, section) {
+	info.forEach(it => document.getElementById(section).innerHTML += `
         <div class="ponencia">
-            <div class="curso">${c}</div>
-            <div class="lugar">${l}</div>
+            <div class="curso">${it.curso}</div>
+            <div class="lugar">${it.lugar}</div>
         </div>
-    `
-	cv.cursos.forEach(it => idCursos.innerHTML += tpl(it.curso, it.lugar))
+    `)
 }
+
+// Funciones auxiliares
 
 fmt = (it) => {
 	it = it ?? ""
 	return typeof it == "string" ? it : it.join(" | ")
+}
+
+async function fetchUrl(url) {
+    const response = await fetch(url)
+    if (!response.ok) {
+        console.log(response)
+    }
+    return await response.json()
 }
