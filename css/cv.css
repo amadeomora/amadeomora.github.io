@@ -31,6 +31,21 @@ img {
     border: 0;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+
+    background-color: black;
+    border-top: 1px dotted;
+    font-size: 80%;
+    height: 1.5rem;
+    margin: 0 auto;
+    padding-top: 0.2rem;
+    text-align: right;
+    width: 100%;
+    max-width: 1000px;
+}
+
 #idFoto {
     float: left;
     margin: 5px 10px 15px 0;
@@ -77,8 +92,16 @@ nav a:hover {
 }
 
 @media (max-width: 763px) {
+    body {
+        margin: 0 0.5rem;
+    }
+
     nav {
         display: none;
+    }
+
+    footer {
+        text-align: center;
     }
 }
 
@@ -236,17 +259,3 @@ main {
     content: "en ";
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-
-    background-color: black;
-    border-top: 1px dotted;
-    font-size: 80%;
-    height: 1.5rem;
-    margin: 0 auto;
-    padding-top: 0.2rem;
-    text-align: right;
-    width: 100%;
-    max-width: 1000px;
-}
