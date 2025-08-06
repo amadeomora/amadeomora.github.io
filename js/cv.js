@@ -13,7 +13,7 @@ async function menu() {
 }
 
 async function cv() {
-    const cv = await fetchUrl('./data/cv.json')
+    const cv = await fetchUrl('./data/cv-minify.json')
     titulos(cv.titulos, 'idTitulos')
     puestos(cv.puestos, 'idPuestos')
     ponencias(cv.ponencias, 'idPonencias')
