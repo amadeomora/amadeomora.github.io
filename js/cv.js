@@ -4,8 +4,8 @@ window.addEventListener('load', function() {
 })
 
 async function menu() {
-	const menuNav = document.querySelector("nav")
     const secciones = await fetchUrl('./data/menu.json')
+	const menuNav = document.querySelector("nav")
     secciones.forEach(it => {
 		menuNav.innerHTML += `<a href="#${it.id}">${it.link}</a>`
 		document.getElementById(it.id).innerHTML = `<h2>${it.titulo}</h2>`
