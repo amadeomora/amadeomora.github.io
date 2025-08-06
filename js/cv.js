@@ -1,7 +1,7 @@
-load = () => {
-	menu()
-	cv()
-}
+window.addEventListener('load', function() {
+    menu()
+    cv()
+})
 
 async function menu() {
 	const menuNav = document.querySelector("nav")
