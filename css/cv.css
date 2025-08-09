@@ -16,6 +16,10 @@
     --section-border-color: orange;
 
     --max-width: 1000px;
+
+    --font-size-first-letter: 175%;
+    --font-size-titulo: 125%;
+    --font-size-subtitulo: 80%;
 }
 
 * {
@@ -57,7 +61,7 @@ footer {
 
     background-color: var(--footer-bg-color);
     border-top: 1px dotted var(--footer-border-color);
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
     height: 1.5rem;
     margin: 0 auto;
     padding-top: 0.2rem;
@@ -74,7 +78,7 @@ footer {
 }
 
 #personal div {
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
 }
 
 #personal div ~ div {
@@ -159,11 +163,11 @@ main {
 }
 
 #titulos .titulo {
-    font-size: 125%;
+    font-size: var(--font-size-titulo)
 }
 
 #titulos .titulo:first-letter {
-    font-size: 175%;
+    font-size: var(--font-size-first-letter)
 }
 
 #titulos .universidad {
@@ -183,7 +187,7 @@ main {
 #puestos .puesto .fecha {
     color: var(--section-border-color);
     float: right;
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
     font-style: italic;
     margin: 0 0.5rem 1rem 1rem;
 }
@@ -194,12 +198,12 @@ main {
 }
 
 #puestos .puesto .modulos {
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
     margin: 0.5rem 4rem 0 4rem;
 }
 
 #puestos .puesto .descripcion {
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
     font-style: italic;
     margin: 0.5rem 4rem 0 4rem;
 }
@@ -210,15 +214,15 @@ main {
 }
 
 #ponencias .ponencia .titulo {
-    font-size: 125%;
+    font-size: var(--font-size-titulo);
 }
 
 #ponencias .ponencia .titulo:first-letter {
-    font-size: 175%;
+    font-size: var(--font-size-first-letter);
 }
 
 #ponencias .ponencia .lugar {
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
     margin-left: 2rem;
 }
 
@@ -232,15 +236,23 @@ main {
 }
 
 #libros .libro .titulo {
-    font-size: 125%;
+    font-size: var(--font-size-titulo);
 }
 
 #libros .libro .titulo:first-letter {
-    font-size: 175%;
+    font-size: var(--font-size-first-letter);
 }
 
 #libros .libro .autoria {
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
+}
+
+#libros .libro .autoria:before {
+    content: "[";
+}
+
+#libros .libro .autoria:after {
+    content: "]";
 }
 
 #proyectos .proyecto {
@@ -249,7 +261,7 @@ main {
 }
 
 #proyectos .proyecto .empresa {
-    font-size: 125%;
+    font-size: var(--font-size-titulo);
 }
 
 #proyectos .proyecto .desc {
@@ -257,7 +269,7 @@ main {
 }
 
 #proyectos .proyecto .herramientas {
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
     margin: 0.5rem 4rem 0 8rem;
 }
 
@@ -267,11 +279,11 @@ main {
 }
 
 #cursos .curso {
-    font-size: 125%;
+    font-size: var(--font-size-titulo);
 }
 
 #cursos .lugar {
-    font-size: 80%;
+    font-size: var(--font-size-subtitulo);
     margin: 0.5rem 4rem 0 4rem;
 }
 

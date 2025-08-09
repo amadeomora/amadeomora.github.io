@@ -11,10 +11,7 @@ window.addEventListener('load', async function() {
     })
 })
 
-async function seccion(id) {
-    const data = await fetchUrl('./data/cv_'+id+'.json')
-    data.forEach(it => document.getElementById(id).innerHTML += window['tpl_'+id](it))
-}
+// Plantillas de secciones
 
 function tpl_titulos(it) {
     return `
@@ -88,4 +85,9 @@ async function fetchUrl(url) {
     const response = await fetch(url)
     if (!response.ok) console.log(response)
     return await response.json()
+}
+
+async function seccion(id) {
+    const data = await fetchUrl('./data/cv_'+id+'.json')
+    data.forEach(it => document.getElementById(id).innerHTML += window['tpl_'+id](it))
 }
