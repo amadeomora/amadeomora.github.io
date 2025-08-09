@@ -1,3 +1,22 @@
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --link-color: khaki;
+    --link-over-color: yellow;
+
+    --nav-bg-color: black;
+    --nav-link-bg-color: white;
+    --nav-link-hover-bg-color: orange;
+
+    --footer-bg-color: black;  
+    --footer-border-color: #777;
+    
+    --section-bg-color: orange;
+    --section-text-color: black;
+    --section-border-color: orange;
+
+    --max-width: 1000px;
+}
 
 * {
     margin: 0;
@@ -5,21 +24,21 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: Tahoma, sans-serif;
     margin: 0 auto;
     text-align: left;
-    max-width: 1000px;
+    max-width: var(--max-width);
 }
 
 a {
-    color: khaki;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: yellow;
+    color:  var(--link-over-color);
 }
 
 abbr,
@@ -36,34 +55,34 @@ footer {
     position: fixed;
     bottom: 0;
 
-    background-color: black;
-    border-top: 1px dotted;
+    background-color: var(--footer-bg-color);
+    border-top: 1px dotted var(--footer-border-color);
     font-size: 80%;
     height: 1.5rem;
     margin: 0 auto;
     padding-top: 0.2rem;
     text-align: right;
     width: 100%;
-    max-width: 1000px;
+    max-width: var(--max-width);
 }
 
-#idFoto {
+#foto {
     float: left;
     margin: 5px 10px 15px 0;
     text-align: center;
     width: 165px;
 }
 
-#idPersonal div {
+#personal div {
     font-size: 80%;
 }
 
-#idPersonal div ~ div {
+#personal div ~ div {
     margin-top: 2rem;
 }
 
 @media (max-width: 550px) {
-    #idPersonal {
+    #personal {
         clear: both;
         margin-bottom: 1rem;
     }
@@ -73,13 +92,13 @@ nav {
     position: sticky;
     top: 0;
 
-    background-color: black;
+    background-color: var(--nav-bg-color);
     clear: both;
     padding: 0rem 0.5rem 0 0.5rem;
 }
 
 nav a {
-    background-color: white;
+    background-color: var(--nav-link-bg-color);
     border-radius: 0.5rem;
     color: black;
     display: inline-block;
@@ -88,8 +107,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: orange;
-    color: white;
+    background-color: var(--nav-link-hover-bg-color);
+    color: var(--text-color);
 }
 
 @media (max-width: 763px) {
@@ -107,9 +126,9 @@ nav a:hover {
 }
 
 h2 {
-    background-color: orange;
+    background-color: var(--section-bg-color);
     border-radius: 0 0.75rem 0.75rem 0;
-    color: black;
+    color: var(--section-text-color);
     margin-bottom: 1rem;
     padding: 0.1rem 1rem 0.1rem 0;
     text-align: right;
@@ -125,138 +144,138 @@ main {
     padding-bottom: 1.5rem;
 }
 
-#idTitulos .titulacion {
+#titulos .titulacion {
     clear: both;
 }
 
-#idTitulos .logo {
+#titulos .logo {
     float: left;
     margin: 0 1rem 1rem 0;
 }
 
-#idTitulos .logo img {
+#titulos .logo img {
     height: 70px;
     width: 60px;
 }
 
-#idTitulos .titulo {
+#titulos .titulo {
     font-size: 125%;
 }
 
-#idTitulos .titulo:first-letter {
+#titulos .titulo:first-letter {
     font-size: 175%;
 }
 
-#idTitulos .universidad {
+#titulos .universidad {
     margin-left: 4rem;
 }
 
-#idPuestos .puesto {
-    border-top: 1px dotted orange;
+#puestos .puesto {
+    border-top: 1px dotted var(--section-border-color);
     padding: 0.25rem 0 1rem;
 }
 
-#idPuestos .puesto .empresa {
+#puestos .puesto .empresa {
     float: left;
     font-size: 125%;
 }
 
-#idPuestos .puesto .fecha {
-    color: orange;
+#puestos .puesto .fecha {
+    color: var(--section-border-color);
     float: right;
     font-size: 80%;
     font-style: italic;
     margin: 0 0.5rem 1rem 1rem;
 }
 
-#idPuestos .puesto .cargo {
+#puestos .puesto .cargo {
     clear: both;
     margin-left: 2rem;
 }
 
-#idPuestos .puesto .modulos {
+#puestos .puesto .modulos {
     font-size: 80%;
     margin: 0.5rem 4rem 0 4rem;
 }
 
-#idPuestos .puesto .descripcion {
+#puestos .puesto .descripcion {
     font-size: 80%;
     font-style: italic;
     margin: 0.5rem 4rem 0 4rem;
 }
 
-#idPonencias .ponencia {
-    border-top: 1px dotted #777;
+#ponencias .ponencia {
+    border-top: 1px dotted var(--section-border-color);
     padding: 0.25rem 0 1rem;
 }
 
-#idPonencias .ponencia .titulo {
+#ponencias .ponencia .titulo {
     font-size: 125%;
 }
 
-#idPonencias .ponencia .titulo:first-letter {
+#ponencias .ponencia .titulo:first-letter {
     font-size: 175%;
 }
 
-#idPonencias .ponencia .lugar {
+#ponencias .ponencia .lugar {
     font-size: 80%;
     margin-left: 2rem;
 }
 
-#idLibros .libro {
+#libros .libro {
     clear: both;
 }
 
-#idLibros .libro .portada {
+#libros .libro .portada {
     float: left;
     margin: 0 1rem 1rem 0;
 }
 
-#idLibros .libro .titulo {
+#libros .libro .titulo {
     font-size: 125%;
 }
 
-#idLibros .libro .titulo:first-letter {
+#libros .libro .titulo:first-letter {
     font-size: 175%;
 }
 
-#idLibros .libro .autoria {
+#libros .libro .autoria {
     font-size: 80%;
 }
 
-#idProyectos .proyecto {
-    border-top: 1px dotted #777;
+#proyectos .proyecto {
+    border-top: 1px dotted var(--section-border-color);
     padding: 0.25rem 0 1rem;
 }
 
-#idProyectos .proyecto .empresa {
+#proyectos .proyecto .empresa {
     font-size: 125%;
 }
 
-#idProyectos .proyecto .desc {
+#proyectos .proyecto .desc {
     margin: 0.5rem 4rem 0 4rem;
 }
 
-#idProyectos .proyecto .herramientas {
+#proyectos .proyecto .herramientas {
     font-size: 80%;
     margin: 0.5rem 4rem 0 8rem;
 }
 
-#idCursos .ponencia {
-    border-top: 1px dotted #777;
+#cursos .ponencia {
+    border-top: 1px dotted var(--section-border-color);
     padding: 0.25rem 0 1rem;
 }
 
-#idCursos .curso {
+#cursos .curso {
     font-size: 125%;
 }
 
-#idCursos .lugar {
+#cursos .lugar {
     font-size: 80%;
     margin: 0.5rem 4rem 0 4rem;
 }
 
-#idCursos .lugar:before {
+#cursos .lugar:before {
     content: "en ";
 }
 

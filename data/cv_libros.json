@@ -1,0 +1,128 @@
+[
+    {
+        "img": "max12.png",
+        "titulo": "Manual de Instalación de MAX 12.0",
+        "editorial": "Comunidad de Madrid.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max11.png",
+        "titulo": "Manual de Instalación de MAX 11.0",
+        "editorial": "Comunidad de Madrid.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max10.png",
+        "titulo": "Manual de Instalación de MAX 10.0",
+        "editorial": "Comunidad de Madrid.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max9.png",
+        "titulo": "Manual de Instalación de MAX 9.0",
+        "editorial": "Comunidad de Madrid.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max8.png",
+        "titulo": "Manual de Instalación de MAX 8.0",
+        "editorial": "Comunidad de Madrid. 2015.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max7.jpg",
+        "titulo": "Manual de Instalación de MAX 7.0",
+        "editorial": "Comunidad de Madrid. 2012.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max6.jpg",
+        "titulo": "Manual de Instalación de MAX 6.0",
+        "editorial": "Comunidad de Madrid. 2010.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max5.png",
+        "titulo": "Manual de Instalación de MAX 5.0",
+        "editorial": "Comunidad de Madrid. 2009.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max5.png",
+        "titulo": "Guía de Referencia de MAX 5.0",
+        "editorial": "Comunidad de Madrid. 2009.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max4.png",
+        "titulo": "Manual de Instalación de MAX 4.0",
+        "editorial": "Comunidad de Madrid. 2008.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max4.png",
+        "titulo": "Guía de Referencia de MAX 4.0",
+        "editorial": "Comunidad de Madrid. 2008.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max3.png",
+        "titulo": "Guía de Instalación de MAX 3.0",
+        "editorial": "Comunidad de Madrid. 2007.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max3.png",
+        "titulo": "Guía de Utilización de MAX 3.0",
+        "editorial": "Comunidad de Madrid. 2007.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "tutoreinternet.jpg",
+        "titulo": "Tutor e Internet",
+        "editorial": "CNICE-MEC. 2006.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max2.png",
+        "titulo": "MAX, Madrid Linux, v.2.0. Manual de instalación",
+        "editorial": "Comunidad de Madrid. 2006.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "max2.png",
+        "titulo": "MAX, Madrid Linux, v.2.0. Manual de utilización por el usuario",
+        "editorial": "Comunidad de Madrid. 2006.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "tutoreseinternet.png",
+        "titulo": "Tutores e internet",
+        "editorial": "CNICE-MECD. 2003.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "hotpotatoes.png",
+        "titulo": "Aplicaciones Educativas con HOT POTATOES",
+        "editorial": "CNICE-MECD. 2002.",
+        "autoria": "[Asesoría técnica]"
+    },
+    {
+        "img": "videodigitalymultimedia.png",
+        "titulo": "Vídeo Digital y Multimedia",
+        "editorial": "PNTIC-MEC. 1998.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "clipper.png",
+        "titulo": "Guía Práctica de Clipper 5.2.",
+        "editorial": "Anaya Multimedia. 1994.",
+        "autoria": "[Coautoría]"
+    },
+    {
+        "img": "pooclipper.png",
+        "titulo": "Programación Orientada al Objeto en Clipper.",
+        "editorial": "Anaya Multimedia. 1993.",
+        "autoria": "[Autoría]"
+    }
+]

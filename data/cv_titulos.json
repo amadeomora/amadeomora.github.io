@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Licenciado en Informática",
+        "universidad": "Universidad Politécnica de Madrid",
+        "logo": "upm.png"
+    },
+    {
+        "titulo": "Diploma de Estudios Avanzados en Didáctica y Organización Escolar",
+        "universidad": "Universidad Nacional de Educación a Distancia",
+        "logo": "uned.png"
+    },
+    {
+        "titulo": "Máster Universitario en Software Libre",
+        "universidad": "Universitat Oberta de Catalunya",
+        "logo": "uoc.png"
+    },
+    {
+        "titulo": "First Certificate in English",
+        "universidad": "University of Cambridge",
+        "logo": "cambridge.png"
+    }
+]

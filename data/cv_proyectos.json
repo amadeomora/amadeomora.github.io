@@ -1,0 +1,83 @@
+[
+    {
+        "empresa": "Software libre",
+        "descripcion": [
+            "Internal Message",
+            "Internal Calendar",
+            "Internal ClassRoom"
+        ],
+        "herramientas": "Componente para Joomla de mensajería interna, avisos de próximos eventos y reserva de salas"
+    },
+    {
+        "empresa": "Comunidad de Madrid",
+        "descripcion": "Grupo de desarrollo de MAX (MAdrid_linuX)",
+        "herramientas": "Linux"
+    },
+    {
+        "empresa": "#FPEmpresa",
+        "descripcion": "Software libre, motor de empresas"
+    },
+    {
+        "empresa": "Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación y Ciencia (CNICE)",
+        "descripcion": "Análisis y desarrollo de la plataforma virtual de formación y trabajo cooperativo a distancia del profesorado",
+        "herramientas": "PHP, MySQL, PostgreSQL y Apache en Linux"
+    },
+    {
+        "empresa": "IES Clara del Rey",
+        "descripcion": "Grupo de Gestión de Calidad"
+    },
+    {
+        "empresa": "Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación y Ciencia (CNICE)",
+        "descripcion": "Coordinador a distancia del curso de Aplicaciones didácticas con Neobook"
+    },
+    {
+        "empresa": "IES La Arboleda - CAP de Alcorcón - Madrid",
+        "descripcion": "Coordinador del grupo de trabajo de la elaboración del Portal WEB del IES La Arboleda"
+    },
+    {
+        "empresa": "Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación, Cultura y Deporte (CNICE)",
+        "descripcion": "Tutor a distancia del curso de Programación en PHP en la Enseñanza"
+    },
+    {
+        "empresa": "Subdirección General de Tratamiento de la Información del Ministerio de Educación, Cultura y Deporte (SGTI)",
+        "descripcion": "Portal web del Ministerio de Educación, Cultura y Deporte",
+        "herramientas": "J2EE y Oracle"
+    },
+    {
+        "empresa": "Centro Nacional de Información y Comunicación Educativa del Ministerio de Educación, Cultura y Deporte (CNICE)",
+        "descripcion": "Miembro del consejo de redacción de la revista Red Digital"
+    },
+    {
+        "empresa": "CPR de Ciudad Lineal",
+        "descripcion": "Grupo de Trabajo Virtual, formado por especialistas en informática educativa, que investigan las posibilidades didácticas de las herramientas de tiempo real en Internet aplicadas a la enseñanza no universitaria"
+    },
+    {
+        "empresa": "Centro de Desarrollo Curricular del Ministerio de Educación y Ciencia (CDC)",
+        "descripcion": "Participación en el análisis y programación del software de gestión administrativa-académica de centros docentes GICeDo",
+        "herramientas": "Clipper en MS-DOS"
+    },
+    {
+        "empresa": "Centro de Desarrollo Curricular del Ministerio de Educación y Ciencia (CDC)",
+        "descripcion": "Base de Datos de Desarrollo Curricular",
+        "herramientas": "BRS, ABSYS, Clipper en UNIX SCO/DOS/Windows"
+    },
+    {
+        "empresa": "Documenta Organización",
+        "descripcion": [
+            "Diseño del Sistema de Gestión Documental Automatizado de la compañía ENDESA",
+            "Mecanización del Archivo fotográfico de la Revista DIEZ MINUTOS del Grupo Hachette",
+            "Mecanización del catálogo de la biblioteca del Ministerio de Cultura",
+            "Proyecto docuNAUTA. Software de gestión documental de archivos",
+            "Diseño del registro de entrada/salida y flujo documental de la entidad SEOPAN"
+        ],
+        "herramientas": [
+            "C, MNS y BRS/Search en UNIX SCO",
+            "C, Clipper en MS-DOS"
+        ]
+    },
+    {
+        "empresa": "Centro de Tratamiento de la Documentación",
+        "descripcion": "Análisis y programación de la aplicación Control y Gestión de Archivos del Centro de Almacén y Custodia de Documentación",
+        "herramientas": "Fortran, Powerhouse 4GL y Architect CASE en VAX/VMS y PDP11"
+    }
+]

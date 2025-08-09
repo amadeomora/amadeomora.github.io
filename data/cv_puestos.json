@@ -1,0 +1,205 @@
+[
+    {
+        "empresa": "IES Tetuán de las Victorias",
+        "fecha": "Desde el curso 2024-25",
+        "cargo": "Catedrático de informática",
+        "modulos": [
+            "Aplicaciones web",
+            "Seguridad informática",
+            "Lenguajes de marcas"
+        ]
+    },
+    {
+        "empresa": "IES Virgen de la Paloma",
+        "fecha": "Cursos 2022-23 y 2023-24",
+        "cargo": "Catedrático de informática y jefe del departamento de informática y comunicaciones",
+        "modulos": [
+            "Acceso a datos",
+            "Programación multimedia y dispositivos móviles"
+        ],
+        "descripcion": "Tutor de funcionarios en prácticas"
+    },
+    {
+        "empresa": "Preparadores de oposiciones",
+        "fecha": "Curso 2022-23",
+        "cargo": "Preparador de oposiciones de la especialidad de informática"
+    },
+    {
+        "empresa": "IES Clara del Rey",
+        "fecha": "Curso 2021-22",
+        "cargo": "Catedrático de informática",
+        "modulos": [
+            "Programación",
+            "Acceso a datos",
+            "Bases de datos"
+        ]
+    },
+    {
+        "empresa": "IES Clara del Rey",
+        "fecha": "Cursos 2015-16 al 2020-21",
+        "cargo": "Profesor de informática",
+        "modulos": [
+            "Programación",
+            "Acceso a datos",
+            "Bases de datos"
+        ],
+        "descripcion": "Tutor de funcionarios en prácticas"
+    },
+    {
+        "empresa": "Centro para la Innovación y Desarrollo de la Educación a Distancia (CIDEAD)",
+        "fecha": "Curso 2019-20",
+        "cargo": "Profesor de informática",
+        "modulos": [
+            "Entornos de desarrollo"
+        ]
+    },
+    {
+        "empresa": "IES Clara del Rey",
+        "fecha": "Cursos 2010-11 al 2014-15",
+        "cargo": "Profesor de informática y jefe de estudios adjunto",
+        "modulos": [
+            "Lenguajes de marcas",
+            "Programación",
+            "Programación multimedia y dispositivos móviles",
+            "Desarrollo de funciones en el sistema informático"
+        ],
+        "descripcion": [
+            "Coordinador de FP Dual",
+            "Tutor de alumnos del Máster de Profesores de Enseñanza Secundaria"
+        ]
+    },
+    {
+        "empresa": "IES Clara del Rey",
+        "fecha": "Cursos 2008-09 y 2009-10",
+        "cargo": "Profesor de informática",
+        "modulos": [
+            "Programación en lenguajes estructurados",
+            "Desarrollo de funciones en el sistema informático"
+        ],
+        "descripcion": "Tutor de alumnos del Máster de Profesores de Enseñanza Secundaria"
+    },
+    {
+        "empresa": "Universidad Nacional de Educación a Distancia",
+        "fecha": "Cursos de 2007-08 al 2011-12",
+        "cargo": "Profesor del Máster en Tecnologías para la Educación y el Conocimiento",
+        "modulos": [
+            "Linux",
+            "Software Libre",
+            "Web 2.0"
+        ]
+    },
+    {
+        "empresa": "Ministerio de Educación",
+        "fecha": "Curso 2007-08",
+        "cargo": "Jefe de Área de Formación del Profesorado del Instituto Superior de Formación y Recursos en Red para el Profesorado (ISFTIC)"
+    },
+    {
+        "empresa": "IES Clara del Rey",
+        "fecha": "Cursos 2005-06 y 2006-07",
+        "cargo": "Profesor de informática y coordinador TIC",
+        "modulos": [
+            "Programación en lenguajes estructurados",
+            "Desarrollo de funciones en el sistema informático",
+            "Fundamentos de programación",
+            "Sistemas gestores de bases de datos"
+        ],
+        "descripcion": "Grupo de gestión de calidad"
+    },
+    {
+        "empresa": "IES La Arboleda de Alcorcón (Madrid)",
+        "fecha": "Cursos 2003-04 y 2004-05",
+        "cargo": "Profesor de informática",
+        "modulos": "Desarrollo de funciones en el sistema informático"
+    },
+    {
+        "empresa": "Ministerio de Educación, Cultura y Deporte",
+        "fecha": "Curso 2002-03",
+        "cargo": "Asesor Técnico Docente de la Subdirección General de Tratamiento de la Información"
+    },
+    {
+        "empresa": "Ministerio de Educación, Cultura y Deporte",
+        "fecha": "Curso 2001-02",
+        "cargo": "Consejero Técnico del Centro Nacional de Informática y Comunicación Educativa (CNICE)",
+        "descripcion": [
+            "Plataformas de formación a distancia",
+            "Proyecto Mentor",
+            "Formación del profesorado a distancia"
+        ]
+    },
+    {
+        "empresa": "IES La Arboleda de Alcorcón - Madrid",
+        "fecha": "Curso 2000-01",
+        "cargo": "Profesor de informática y jefe del departamento de informática y comunicaciones",
+        "modulos": [
+            "Sistemas gestores de bases de datos",
+            "Desarrollo de funciones en el sistema informático"
+        ]
+    },
+    {
+        "empresa": "IES La Arboleda de Alcorcón (Madrid)",
+        "fecha": "Curso 1999-2000",
+        "cargo": "Profesor de informática",
+        "modulos": [
+            "Sistemas gestores de bases de datos",
+            "Desarrollo de funciones en el sistema informático"
+        ]
+    },
+    {
+        "empresa": "Ministerio de Educación y Ciencia",
+        "fecha": "De febrero de 1998 a septiembre de 1999",
+        "cargo": "Jefe del Gabinete de Telemática del Programa de Nuevas Tecnologías de la Información y la Comunicación (PNTIC)"
+    },
+    {
+        "empresa": "IES La Arboleda de Alcorcón - Madrid",
+        "fecha": "De septiembre de 1996 a enero 1998",
+        "cargo": "Profesor de informática",
+        "modulos": [
+            "Lenguajes de 4ª generación y herramientas CASE",
+            "Formación en centros de trabajo"
+        ]
+    },
+    {
+        "empresa": "Ministerio de Educación y Ciencia",
+        "fecha": "De enero de 1995 a septiembre de 1996",
+        "cargo": "Asesor Técnico Docente del Centro de Desarrollo Curricular (CDC)"
+    },
+    {
+        "empresa": "IFP Villablanca",
+        "fecha": "De julio de 1994 a diciembre de 1994",
+        "cargo": "Profesor de tecnología informática y jefe de estudios"
+    },
+    {
+        "empresa": "IFP Villablanca",
+        "fecha": "Cursos 1992-93 y 1993-94",
+        "cargo": "Profesor de tecnología informática"
+    },
+    {
+        "empresa": "Documenta Organización",
+        "fecha": "De junio de 1990 a septiembre de 1992",
+        "cargo": "Jefe de proyectos",
+        "descripcion": "Consultoría. Gestión documental y archivos docuNAUTA."
+    },
+    {
+        "empresa": "Sun Microsystems Ibérica",
+        "fecha": "De abril de 1990 a mayo de 1990",
+        "descripcion": "División de Venta Indirecta"
+    },
+    {
+        "empresa": "Documenta Organización",
+        "fecha": "De noviembre de 1989 a marzo de 1990",
+        "cargo": "Analista",
+        "descripcion": "Documentación y archivos. BRS/Search."
+    },
+    {
+        "empresa": "Centro de Tratamiento de la Documentación",
+        "fecha": "De enero de 1989 a octubre de 1989",
+        "cargo": "Técnico de Sistemas",
+        "descripcion": "VAX/VMS y PDP/RSX"
+    },
+    {
+        "empresa": "Centro de Tratamiento de la Documentación",
+        "fecha": "De mayo de 1987 a diciembre de 1988",
+        "cargo": "Operador-programador del Servicio de Microfilmación",
+        "descripcion": "PDP-11 y RT-11"
+    }
+]
