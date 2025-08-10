@@ -1,0 +1,33 @@
+:root {
+    --bg-color: #f6fcff;
+    --text-color: rgb(92, 67, 132);
+    --link-color: khaki;
+    --link-over-color: yellow;
+
+    --nav-bg-color: #f6fcff;
+    --nav-link-bg-color: navy;
+    --nav-link-text-color: white;
+    --nav-link-hover-bg-color: orange;
+
+    --footer-bg-color: white;  
+    --footer-border-color: navy;
+    
+    --section-bg-color: navy;
+    --section-text-color: white;
+    --section-border-color: navy;
+
+    --max-width: 800px;
+
+    --font-size-first-letter: 175%;
+    --font-size-titulo: 125%;
+    --font-size-subtitulo: 80%;
+}
+
+* {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}

@@ -1,4 +1,7 @@
-window.addEventListener('load', async function() {
+window.addEventListener('load', async function() {   
+    const head = this.document.querySelector("header")
+    head.innerHTML = tpl_header()
+
 	const menu = document.querySelector("nav")
     const main = document.querySelector("main")
 
@@ -9,9 +12,29 @@ window.addEventListener('load', async function() {
         document.getElementById(it.id).innerHTML = `<h2>${it.titulo}</h2>`
         seccion(it.id)
     })
+
+    const foot = document.querySelector("footer")
+    foot.innerHTML = tpl_footer()
 })
 
 // Plantillas de secciones
+
+function tpl_header() {
+    const name = "Amadeo Mora Rioja"
+    return `
+        <a href="index.html" title="Portal de ${name}">
+            <img src="img/foto.jpg" alt="Foto de ${name}">
+        </a>
+
+        <h1>${name}</h1>
+        <div>amadeomora (en) gmail (punto) com</div>
+    `
+}
+
+function tpl_footer() {
+    const year = new Date().getFullYear()
+    return `&copy; ${year}`
+}
 
 function tpl_titulos(it) {
     return `

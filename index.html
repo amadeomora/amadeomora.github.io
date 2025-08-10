@@ -12,19 +12,19 @@
 </head>
 
 <body>
-    <section id="identificacion">
-        <h1>AMADEO MORA RIOJA &nbsp;<span class="red">&#9829;</span>&#9650;</h1>
+    <header>
+        <h1>Amadeo Mora Rioja &nbsp;<span class="red">&#9829;</span>&#9650;</h1>
         <img src="img/foto.jpg" alt="Foto de Amadeo Mora Rioja" title="Amadeo Mora Rioja">
-    </section>
+    <header>
 
-    <section id="enlaces">
-        <div><a href="cv.html">currículum</a></div>
-        <div><a href="https://www.educa2.madrid.org/web/amadeo.mora">materiales en EducaMadrid</a></div>
-        <div><a href="https://github.com/amadeomora">repositorio de GitHub</a></div>
-        <div><a href="https://gitlab.com/amadeomora/">repositorio de GitLab</a></div>
-    </section>
+    <nav>
+        <a href="cv.html">currículum</a>
+        <a href="https://www.educa2.madrid.org/web/amadeo.mora">materiales en EducaMadrid</a>
+        <a href="https://github.com/amadeomora">repositorio de GitHub</a>
+        <a href="https://gitlab.com/amadeomora/">repositorio de GitLab</a>
+    </nav>
     
-    <section id="cuadros">
+    <main>
         <img src="img/cuadros/cantabria1.png" title="Cantabria 1">
         <img src="img/cuadros/cantabria2.png" title="Cantabria 2">
         <img src="img/cuadros/cantabria3.png" title="Cantabria 3">
@@ -33,9 +33,14 @@
         <img src="img/cuadros/huelva1.png" title="Huelva 1">
         <img src="img/cuadros/huelva2.png" title="Huelva 2">
         <!--img src="img/cuadros/eldia.jpg" title="El día" width="500px" height="307px"-->
-    </section>
+    </main>
 
-    <section id="copyright">&copy; 2025</section>
+    <footer>
+        <script>
+            const year = new Date().getFullYear()
+            document.write(`&copy; ${year}`)
+        </script>
+    </footer>
 </body>
 
 </html>

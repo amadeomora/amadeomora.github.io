@@ -1,38 +1,7 @@
-:root {
-    --bg-color: black;
-    --text-color: white;
-    --link-color: khaki;
-    --link-over-color: yellow;
-
-    --nav-bg-color: black;
-    --nav-link-bg-color: white;
-    --nav-link-hover-bg-color: orange;
-
-    --footer-bg-color: black;  
-    --footer-border-color: #777;
-    
-    --section-bg-color: orange;
-    --section-text-color: black;
-    --section-border-color: orange;
-
-    --max-width: 1000px;
-
-    --font-size-first-letter: 175%;
-    --font-size-titulo: 125%;
-    --font-size-subtitulo: 80%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('root.css');
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: Tahoma, sans-serif;
     margin: 0 auto;
-    text-align: left;
     max-width: var(--max-width);
 }
 
@@ -55,66 +24,6 @@ img {
     border: 0;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-
-    background-color: var(--footer-bg-color);
-    border-top: 1px dotted var(--footer-border-color);
-    font-size: var(--font-size-subtitulo);
-    height: 1.5rem;
-    margin: 0 auto;
-    padding-top: 0.2rem;
-    text-align: right;
-    width: 100%;
-    max-width: var(--max-width);
-}
-
-#foto {
-    float: left;
-    margin: 5px 10px 15px 0;
-    text-align: center;
-    width: 165px;
-}
-
-#personal div {
-    font-size: var(--font-size-subtitulo);
-}
-
-#personal div ~ div {
-    margin-top: 2rem;
-}
-
-@media (max-width: 550px) {
-    #personal {
-        clear: both;
-        margin-bottom: 1rem;
-    }
-}
-
-nav {
-    position: sticky;
-    top: 0;
-
-    background-color: var(--nav-bg-color);
-    clear: both;
-    padding: 0rem 0.5rem 0 0.5rem;
-}
-
-nav a {
-    background-color: var(--nav-link-bg-color);
-    border-radius: 0.5rem;
-    color: black;
-    display: inline-block;
-    margin: 0 1rem 0.5rem 0;
-    padding: 0.5rem 1rem;
-}
-
-nav a:hover {
-    background-color: var(--nav-link-hover-bg-color);
-    color: var(--text-color);
-}
-
 @media (max-width: 763px) {
     body {
         margin: 0 0.5rem;
@@ -129,6 +38,74 @@ nav a:hover {
     }
 }
 
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+
+    background-color: var(--footer-bg-color);
+    border-top: 1px dotted var(--footer-border-color);
+    font-size: var(--font-size-subtitulo);
+    height: 1.5rem;
+    margin: 0 auto;
+    padding-top: 0.2rem;
+    text-align: center;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+/* Header */
+header img {
+    float: left;
+    margin: 5px 10px 15px 0;
+    text-align: center;
+}
+
+header div {
+    font-size: var(--font-size-subtitulo);
+}
+
+@media (max-width: 550px) {
+    header h1 {
+        clear: both;
+    }
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+
+    background-color: var(--nav-bg-color);
+    clear: both;
+    padding: 0.5rem;
+}
+
+nav a {
+    background-color: var(--nav-link-bg-color);
+    border-radius: 0.5rem;
+    color: var(--nav-link-text-color);
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: var(--nav-link-hover-bg-color);
+    color: var(--text-color);
+}
+
+/* Main content */
+
+main {
+    padding-bottom: 1.5rem;
+}
+
+section {
+    clear: both;
+    padding-top: 3.25rem;
+}
+
 h2 {
     background-color: var(--section-bg-color);
     border-radius: 0 0.75rem 0.75rem 0;
@@ -136,17 +113,10 @@ h2 {
     margin-bottom: 1rem;
     padding: 0.1rem 1rem 0.1rem 0;
     text-align: right;
-    width: 75%;
-}
+    width: 90%;
+}    
 
-section {
-    clear: both;
-    padding-top: 4rem;
-}
-
-main {
-    padding-bottom: 1.5rem;
-}
+/* Titulos */
 
 #titulos .titulacion {
     clear: both;
@@ -154,7 +124,7 @@ main {
 
 #titulos .logo {
     float: left;
-    margin: 0 1rem 1rem 0;
+    margin: 0 1rem 1rem 5px;
 }
 
 #titulos .logo img {
@@ -163,25 +133,27 @@ main {
 }
 
 #titulos .titulo {
-    font-size: var(--font-size-titulo)
+    font-size: var(--font-size-titulo);
 }
 
 #titulos .titulo:first-letter {
-    font-size: var(--font-size-first-letter)
+    font-size: var(--font-size-first-letter);
 }
 
 #titulos .universidad {
-    margin-left: 4rem;
+    margin-left: 5rem;
 }
+
+/* Puestos */
 
 #puestos .puesto {
     border-top: 1px dotted var(--section-border-color);
-    padding: 0.25rem 0 1rem;
+    padding: 0.25rem 0 1rem 5px;
 }
 
 #puestos .puesto .empresa {
     float: left;
-    font-size: 125%;
+    font-size: var(--font-size-titulo);
 }
 
 #puestos .puesto .fecha {
@@ -199,14 +171,16 @@ main {
 
 #puestos .puesto .modulos {
     font-size: var(--font-size-subtitulo);
-    margin: 0.5rem 4rem 0 4rem;
+    margin: 0.5rem 0 0 4rem;
 }
 
 #puestos .puesto .descripcion {
     font-size: var(--font-size-subtitulo);
     font-style: italic;
-    margin: 0.5rem 4rem 0 4rem;
+    margin: 0.5rem 0 0 4rem;
 }
+
+/* Ponencias */
 
 #ponencias .ponencia {
     border-top: 1px dotted var(--section-border-color);
@@ -215,6 +189,7 @@ main {
 
 #ponencias .ponencia .titulo {
     font-size: var(--font-size-titulo);
+    margin-left: 5px;
 }
 
 #ponencias .ponencia .titulo:first-letter {
@@ -225,6 +200,8 @@ main {
     font-size: var(--font-size-subtitulo);
     margin-left: 2rem;
 }
+
+/* Libros */
 
 #libros .libro {
     clear: both;
@@ -255,6 +232,8 @@ main {
     content: "]";
 }
 
+/* Proyectos */
+
 #proyectos .proyecto {
     border-top: 1px dotted var(--section-border-color);
     padding: 0.25rem 0 1rem;
@@ -262,16 +241,19 @@ main {
 
 #proyectos .proyecto .empresa {
     font-size: var(--font-size-titulo);
+    margin-left: 5px;
 }
 
 #proyectos .proyecto .desc {
-    margin: 0.5rem 4rem 0 4rem;
+    margin: 0.5rem 0 0 4rem;
 }
 
 #proyectos .proyecto .herramientas {
     font-size: var(--font-size-subtitulo);
-    margin: 0.5rem 4rem 0 8rem;
+    margin: 0.5rem 0 0 8rem;
 }
+
+/* Cursos */
 
 #cursos .ponencia {
     border-top: 1px dotted var(--section-border-color);
@@ -279,15 +261,22 @@ main {
 }
 
 #cursos .curso {
+    display: inline-block;
     font-size: var(--font-size-titulo);
+    margin-left: 5px;
 }
 
 #cursos .lugar {
+    display: inline-block;
     font-size: var(--font-size-subtitulo);
-    margin: 0.5rem 4rem 0 4rem;
+    font-style: italic;
+    margin-left: 1rem;
 }
 
 #cursos .lugar:before {
-    content: "en ";
+    content: "( ";
 }
 
+#cursos .lugar:after {
+    content: " )";
+}
