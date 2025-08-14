@@ -106,7 +106,7 @@
         "descripcion": "Grupo de gestión de calidad"
     },
     {
-        "empresa": "IES La Arboleda de Alcorcón (Madrid)",
+        "empresa": "IES La Arboleda de Alcorcón - Madrid",
         "fecha": "Cursos 2003-04 y 2004-05",
         "cargo": "Profesor de informática",
         "modulos": "Desarrollo de funciones en el sistema informático"
@@ -136,7 +136,7 @@
         ]
     },
     {
-        "empresa": "IES La Arboleda de Alcorcón (Madrid)",
+        "empresa": "IES La Arboleda de Alcorcón - Madrid",
         "fecha": "Curso 1999-2000",
         "cargo": "Profesor de informática",
         "modulos": [
@@ -191,13 +191,13 @@
         "descripcion": "Documentación y archivos. BRS/Search."
     },
     {
-        "empresa": "Centro de Tratamiento de la Documentación",
+        "empresa": "Centro de Tratamiento de la Documentación (CTD)",
         "fecha": "De enero de 1989 a octubre de 1989",
         "cargo": "Técnico de Sistemas",
         "descripcion": "VAX/VMS y PDP/RSX"
     },
     {
-        "empresa": "Centro de Tratamiento de la Documentación",
+        "empresa": "Centro de Tratamiento de la Documentación (CTD)",
         "fecha": "De mayo de 1987 a diciembre de 1988",
         "cargo": "Operador-programador del Servicio de Microfilmación",
         "descripcion": "PDP-11 y RT-11"
