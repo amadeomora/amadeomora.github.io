@@ -1,26 +1,67 @@
+/**
+ * Carga el Menú y el CV desde varios archivos JSON y lo muestra en la página.
+ * Utiliza plantillas para renderizar las diferentes secciones del CV.
+ */
 window.addEventListener('load', async function() {   
-    const head = this.document.querySelector("header")
-    head.innerHTML = tpl_header()
+    document.querySelector('header').innerHTML = tpl_header()
 
-	const menu = document.querySelector("nav")
-    const main = document.querySelector("main")
+	const nav = document.querySelector('nav')
+    const main = document.querySelector('main')
 
-    const secciones = await fetchUrl('./data/menu.json')
+    const secciones = await fetchJson('./data/menu.json')
     secciones.forEach(it => {
-        menu.innerHTML += `<a href="#${it.id}">${it.link}</a>`
+        nav.innerHTML += `<a href="#${it.id}">${it.link}</a>`
         main.innerHTML += `<section id="${it.id}"></section>`
         document.getElementById(it.id).innerHTML = `<h2>${it.titulo}</h2>`
         seccion(it.id)
     })
 
-    const foot = document.querySelector("footer")
-    foot.innerHTML = tpl_footer()
+    document.querySelector('footer').innerHTML = tpl_footer()
 })
+
+/**
+ * Formatea un elemento para mostrarlo como una cadena de texto.
+ * Si el elemento es `null` o `undefined`, devuelve una cadena vacía.
+ * Si es una cadena, la devuelve tal cual.
+ * Si es un array, lo convierte en una cadena uniendo sus elementos con ' | '
+ * 
+ * @param {string|Array} it - El elemento a formatear.
+ * @returns {string} - La representación en cadena del elemento.
+ */
+fmt = (it) => {
+	it = it ?? ''
+	return typeof it == 'string' ? it : it.join(' | ')
+}
+
+/**
+ * Realiza una solicitud HTTP GET para obtener un recurso JSON.
+ * Si la respuesta no es exitosa, imprime el error en la consola.
+ * 
+ * @param {string} url - La URL del recurso JSON a obtener.
+ * @returns {Promise<Object>} - Una promesa que resuelve con el objeto JSON obtenido.
+ */
+async function fetchJson(url) {
+    const response = await fetch(url)
+    if (!response.ok) console.log(response)
+    return await response.json()
+}
+
+/**
+ * Carga una sección del CV a partir de un archivo JSON.
+ * Utiliza la plantilla correspondiente para renderizar cada elemento.
+ * 
+ * @param {string} id - El ID de la sección a cargar.
+ */
+async function seccion(id) {
+    const data = await fetchJson('./data/cv_'+id+'.json')
+    data.forEach(it => document.getElementById(id).innerHTML += window['tpl_'+id](it))
+}
+
 
 // Plantillas de secciones
 
 function tpl_header() {
-    const name = "Amadeo Mora Rioja"
+    const name = 'Amadeo Mora Rioja'
     return `
         <a href="index.html" title="Portal de ${name}">
             <img src="img/foto.jpg" alt="Foto de ${name}">
@@ -95,22 +136,4 @@ function tpl_cursos(it) {
             <div class="lugar">${it.lugar}</div>
         </div>
     `
-}
-
-// Funciones auxiliares
-
-fmt = (it) => {
-	it = it ?? ""
-	return typeof it == "string" ? it : it.join(" | ")
-}
-
-async function fetchUrl(url) {
-    const response = await fetch(url)
-    if (!response.ok) console.log(response)
-    return await response.json()
-}
-
-async function seccion(id) {
-    const data = await fetchUrl('./data/cv_'+id+'.json')
-    data.forEach(it => document.getElementById(id).innerHTML += window['tpl_'+id](it))
 }
