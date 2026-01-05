@@ -40,22 +40,31 @@ img {
     max-width: 100%;
 }
 
-nav a {
-    display: block;
+nav li {
+    display: inline-block;
     font-size: 120%;
     margin: 1rem 0;
 }
 
 nav a::before {
-    content: '→ ';
+    content: '[ ';
     color: var(--link-color);
 }
 
 nav a::after {
-    content: ' ←';
+    content: ' ] ';
     color: var(--link-color);
 }
 
 .red {
     color: var(--heart-color);
+}
+
+p img {
+    vertical-align: middle;
+}
+
+footer {
+    font-size: 80%;
+    margin: 2rem 0;
 }
