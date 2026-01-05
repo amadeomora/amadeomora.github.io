@@ -1,0 +1,61 @@
+@import url('root.css');
+
+:root {
+    --link-color: navy;
+    --link-over-color: rgb(0, 225, 255);
+    --heart-color: red;
+    --heart-size: 1.5rem;
+}
+
+* {
+    text-align: left;
+}
+
+body {
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+p {
+    margin: 1rem 0;
+}
+
+li {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-over-color);
+}
+
+img {
+    margin: 0.5rem 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+nav a {
+    display: block;
+    font-size: 120%;
+    margin: 1rem 0;
+}
+
+nav a::before {
+    content: '→ ';
+    color: var(--link-color);
+}
+
+nav a::after {
+    content: ' ←';
+    color: var(--link-color);
+}
+
+.red {
+    color: var(--heart-color);
+}
