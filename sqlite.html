@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Amadeo Mora Rioja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLite</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/educacion.css">
+</head>
+
+<body>
+    <nav>
+        <a href="materiales-educativos.html">Materiales educativos</a>
+    </nav>
+    <header>
+        <img class="tr" src="videos-educativos/sqlite370_banner.gif" alt="logo">
+        <h1>SQLite</h1>
+        <a href="https://www.sqlite.org/">SQLite</a>
+    </header>
+    <main>
+        <article>
+            <h2>Introducción</h2>
+            <p>SQLite es un gestor de bases de datos relacionales.</p>
+            <p>Por lo tanto se utiliza SQL para actualizaciones y consultas.</p>
+            <p>Tiene un conjunto limitado de tipos de datos admitiendo:</p>
+            <ul>
+                <li><strong>INTEGER</strong> Entero con signo, almacenado en 1, 2, 3, 4, 6 u 8 bytes, según la magnitud
+                    del valor.</li>
+                <li><strong>REAL</strong> Decimal almacenado como un número de punto flotante IEEE de 8 bytes.</li>
+                <li><strong>TEXT</strong> Cadena de texto codificada según la base de datos (UTF-8, UTF-16BE o
+                    UTF-16LE).</li>
+                <li><strong>BLOB</strong> Binary large object.</li>
+                <li><strong>NULL</strong>&nbsp;Valor nulo.</li>
+            </ul>
+            <p>Permite bautizar los tipos de datos con los nombre habituales de SQL realizando internamente una
+                reinterpretación. Por ejemplo, VARCHAR se convertirá automáticamente a TEXT o INT a INTEGER.</p>
+            <p>Al crear las tablas permite un tipo de clave autoincremental que debe ser definida como INTEGER PRIMARY
+                KEY AUTOINCREMENT.</p>
+        </article>
+        <article>
+            <h2>SQLite en MAX</h2>
+            <video width="320" height="240" controls>
+                <source src="videos-educativos/SQLite_en_MAX.mp4" type="video/mp4">
+            </video>
+        </article>
+        <article>
+            <h2>SQLite en Windows</h2>
+            <video width="320" height="240" controls>
+                <source src="videos-educativos/SQLite_en_Windows.mp4" type="video/mp4">
+            </video>
+        </article>
+        <article>
+            <h2>Programando con JAVA y JDBC</h2>
+            <video width="320" height="240" controls>
+                <source src="videos-educativos/Java_con_SQLite_(JDBC).mp4" type="video/mp4">
+            </video>
+            <p>Un ejemplo de código para conectarse a la base de datos productos de SQLite con Java sería el siguiente:</p>
+            <pre><code>
+import java.sql.*;
+
+public class SQLiteJDBC {
+   public static void main( String args[] ) {
+      Connection c = null;
+      Statement stmt = null;
+      try {
+         Class.forName("org.sqlite.JDBC");
+         c = DriverManager.getConnection("jdbc:sqlite:productos.db");
+
+         stmt = c.createStatement();
+         String sql = "SELECT id, nombre, precio FROM productos;";
+         ResultSet rs = stmt.executeQuery(sql);
+
+         while (rs.next()) {
+            int id = rs.getInt("id");
+            String nombre = rs.getString("nombre");
+            double precio = rs.getDouble("precio");
+
+            System.out.println("ID = " + id);
+            System.out.println("Nombre = " + nombre);
+            System.out.println("Precio = " + precio);
+            System.out.println();
+         }
+
+         rs.close();
+         stmt.close();
+         c.close();
+      } catch ( Exception e ) {
+         System.err.println(e);
+      }
+   }
+}                
+            </code></pre>
+        </article>
+    </main>
+    <footer>
+        <script>
+            const year = new Date().getFullYear()
+            document.write(`&copy; ${year}`)
+        </script>
+    </footer>
+</body>
+
+</html>

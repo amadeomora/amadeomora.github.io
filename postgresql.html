@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Amadeo Mora Rioja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostgreSQL</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/educacion.css">
+</head>
+
+<body>
+    <nav>
+        <a href="materiales-educativos.html">Materiales educativos</a>
+    </nav>
+    <header>
+        <h1>PostgreSQL</h1>
+        <a href="https://www.postgresql.org/">PostgreSQL</a>
+    </header>
+    <main>
+        <p><strong>Instalar PostgreSQL</strong></p>
+        <p># apt update<br /># apt install postgresql</p>
+        <p><strong>Entrar en el gestor de base de datos</strong></p>
+        <p># su - postgres<br />$ psql</p>
+        <p><strong>Crear el usuario y la base de datos con la que vamos a trabajar</strong></p>
+        <p>postgres=# CREATE USER usuario PASSWORD 'clave';<br />postgres=# CREATE DATABASE basededatos WITH OWNER
+            usuario;<br />postgres=# \q</p>
+        <p><strong>Salir hasta nuestro prompt</strong></p>
+        <p>$ ^D<br /># ^D</p>
+        <p><strong>Ya podemos trabajar con nuestro usuario y nuestra base de datos</strong></p>
+        <p>$ psql -h 127.0.0.1 -U usuario basededatos</p>
+    </main>
+    <footer>
+        <script>
+            const year = new Date().getFullYear()
+            document.write(`&copy; ${year}`)
+        </script>
+    </footer>
+</body>
+
+</html>

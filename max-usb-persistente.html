@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Amadeo Mora Rioja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear un USB persistente de MAX</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/educacion.css">
+</head>
+
+<body>
+    <nav>
+        <a href="materiales-educativos.html">Materiales educativos</a>
+    </nav>
+    <header>
+        <img class="tr" src="videos-educativos/mkusb128.png" alt="logo">
+        <h1>Crear un USB persistente de MAX</h1>
+        <a href="https://www.educa2.madrid.org/web/max">MAX</a>
+    </header>
+    <main>
+        <h2>Instalaci&oacute;n</h2>
+        <p>Instalar mkusb:</p>
+        <p>sudo add-apt-repository ppa:mkusb/ppa<br />sudo apt update<br />sudo apt install --install-recomends mkusb
+            mkusb-nox usb-pack-efi</p>
+        <p>Ejecutar mkusb:</p>
+        <p>mkusb</p>
+        <p>Seleccionar versi&oacute;n "dbus"<br />Seleccionar "Install (make a boot device)"<br />Seleccionar la ISO que
+            se quiere grabar previamente descargada<br />Seleccionar el dispositivo USB donde se quiere guardar
+            &iexcl;cuidado!<br />Seleccionar "'Persistent live' - only Debian and Ubuntu"<br />Seleccionar el
+            tama&ntilde;o de persistencia (al m&aacute;ximo posible)<br />Seleccionar "Go"</p>
+        <p>Al finalizar extraer el USB</p>
+        <h2>Ejecuci&oacute;n</h2>
+        <p>Arrancar el PC con el USB conectado<br />Seleccionar arranque con USB (generalmente F12 al arrancar)</p>
+        <h2>Configuraci&oacute;n</h2>
+        <p>Al ser una unidad Live algunos elementos del escritorio y de la configuraci&oacute;n siempre se reinician y
+            nos gustar&iacute;a mantenerlas en los sucesivos arranques. Es cuesti&oacute;n de gustos pero yo prefiero
+            que no aparezcan los iconos de Instalar en el disco duro y otros. Para ello realizaremos varios scripts que
+            arrancaremos con crontab o como servicios en /etc/init.d.</p>
+        <h3>NOTA</h3>
+        <p>Ninguna herramienta Windows, ni tan siquiera Rufus, consigue la persistencia que nosotros pretendemos.</p>
+    </main>
+    <footer>
+        <script>
+            const year = new Date().getFullYear()
+            document.write(`&copy; ${year}`)
+        </script>
+    </footer>
+</body>
+
+</html>

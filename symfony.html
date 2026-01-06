@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Amadeo Mora Rioja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symfony</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/educacion.css">
+</head>
+
+<body>
+    <nav>
+        <a href="materiales-educativos.html">Materiales educativos</a>
+    </nav>
+    <header>
+        <h1>Symfony</h1>
+        <a href="https://symfony.com/">Symfony</a>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <p>Instalación</p>
+                <p>Instalamos Symfony<br>wget https://get.symfony.com/cli/installer -O - | bash.</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Instalar_Symfony_en_MAX.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Crear aplicación</p>
+                <p>Creamos una nueva aplicación Symfony<br>symfony new --version=lts --full --no-git <proyecto>
+                </p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Creando_una_nueva_aplicación_Symfony.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Configuar base de datos</p>
+                <p>Configuramos la conexión de la base de datos<br>.env</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Configurar_la_conexión_de_base_de_datos_en_Symfony.mp4"
+                        type="video/mp4">
+                </video>
+                <p>Siendo nuestro modelo de datos</p>
+                <img src="videos-educativos/EmpleadoDepartamento.MER.png" alt="MER Empleado Departamento">
+            </li>
+            <li>
+                <p>Crear entidades</p>
+                <p>php bin/console make:entity</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Creando_entidades_con_Symfony.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Crear CRUD</p>
+                <p>php bin/console make:crud</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Generando_el_CRUD_de_una_entidad_en_Symfony.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Generar base de datos</p>
+                <p>php bin/console doctrine:database:create<br>php bin/console doctrine:schema:create</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Generación_del_esquema_de_la_base_datos_con_Symfony.mp4"
+                        type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Arrancar el servidor</p>
+                <p>symfony serve</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Arrancamos_el_servidor_de_Symfony.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Modificar el esquema de la base de datos</p>
+                <p>php bin/console doctrine:schema:update</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Actualizando_el_esquema_de_la_base_de_datos_en_Symfony.mp4"
+                        type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Mejorar el aspecto de la aplicación</p>
+                <p class="red">A partir de ahora, ¡¡¡ pongan su sonido alto !!!</p>
+                <p>La aplicación funciona bien pero vamos a mejorar la imagen del resultado obtenido.</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Adaptación_visual_de_un_proyecto_Symfony.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Añadir menú</p>
+                <p>Ahora vamos a incluir un menú y una ruta inicial a la aplicación</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Añadir_un_menú_a_la_aplicación_Symfony.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <p>Establecer sesión de usuario</p>
+                <p>Vamos a incluir una sesión identificada</p>
+                <video width="320" height="240" controls>
+                    <source src="videos-educativos/Añadir_una_sesión_identificada_en_Symfony.mp4" type="video/mp4">
+                </video>
+                <p>Con esto podríamos decir que la aplicación está finalizada aunque seguro que incluiremos
+                    posteriormente algún extra.</p>
+                <p>Algunas cuestiones que hemos resuelto de forma manual, como el css, si leemos información de Symfony
+                    veremos que se puede realizar de otros modos más profesionales y flexibles.</p>
+                <p>Ahora ¡es tu turno!</p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <script>
+            const year = new Date().getFullYear()
+            document.write(`&copy; ${year}`)
+        </script>
+    </footer>
+</body>
+
+</html>

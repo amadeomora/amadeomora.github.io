@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Amadeo Mora Rioja">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MariaDB</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/educacion.css">
+</head>
+
+<body>
+    <nav>
+        <a href="materiales-educativos.html">Materiales educativos</a>
+    </nav>
+    <header>
+        <h1>MariaDB</h1>
+        <a href="https://mariadb.org/">MariaDB</a>
+    </header>
+    <main>
+        <article>
+            <h2>MariaDB en Docker</h2>
+            <p><strong>&gt;&gt;&gt;&gt; En el anfitrión</strong><br />docker run -d -p 7706:3306 --name mymariadb
+                --network
+                bridge -e MYSQL_ROOT_PASSWORD=toor mariadb</p>
+            <p><strong>&gt;&gt;&gt;&gt; En el contenedor</strong><br /># mysql -uroot -ptoor<br />MariaDB [(none)]&gt;
+                use
+                mysql<br />MariaDB [mysql]&gt; GRANT ALL PRIVILEGES ON *.* TO 'remoto'@'%' IDENTIFIED BY
+                'remoto';<br />MariaDB [mysql]&gt; FLUSH PRIVILEGES;<br />MariaDB [mysql]&gt; \q</p>
+            <p><strong>&gt;&gt;&gt;&gt; En el anfitrión Linux</strong><br />$ ifconfig o ip address ---&gt; ipDocker</p>
+            <p>$ mysql -u remoto -p -h &lt;ipDocker&gt; -P 7706</p>
+            <p><strong>&gt;&gt;&gt;&gt; En el anfitrión Windows</strong><br />PC C:\&gt; ipconfig ---&gt; ipWSL</p>
+            <p>PC C:\&gt; \xampp\mysql\bin\mysql -u remoto -p -h &lt;ipWSL&gt; -P 7706</p>
+        </article>
+        <article>
+            <h2>MariaDB en MAX</h2>
+            <video width="320" height="240" controls>
+                <source src="videos-educativos/MariaDB_en_MAX.mp4" type="video/mp4">
+            </video>            
+        </article>
+        <article>
+            <h2>MariaDB en Windows</h2>
+            <video width="320" height="240" controls>
+                <source src="videos-educativos/MariaDB_en_Windows.mp4" type="video/mp4">
+            </video>            
+        </article>
+    </main>
+    <footer>
+        <script>
+            const year = new Date().getFullYear()
+            document.write(`&copy; ${year}`)
+        </script>
+    </footer>
+</body>
+
+</html>
