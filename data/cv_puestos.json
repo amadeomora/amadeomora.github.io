@@ -1,12 +1,14 @@
 [
     {
         "empresa": "IES Tetuán de las Victorias",
-        "fecha": "Desde el curso 2024-25",
+        "fecha": "Cursos 2024-25 al 2026-27",
         "cargo": "Catedrático de informática",
         "modulos": [
             "Aplicaciones web",
             "Seguridad informática",
-            "Lenguajes de marcas"
+            "Lenguajes de marcas",
+            "Administración de sistemas gestores de bases de datos",
+            "Python"
         ]
     },
     {
